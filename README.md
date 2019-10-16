@@ -16,9 +16,7 @@ The Cypress Core Library provides basic types and utilities that can be used bet
 * [API Reference Guide](https://cypresssemiconductorco.github.io/core-lib/html/modules.html)
 * [Cypress Semiconductor](http://www.cypress.com)
 * [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
-* [Version](./version.txt)
-* [LICENSE](./LICENSE)
-* [EULA](./EULA)
+* [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
 © Cypress Semiconductor Corporation, 2019.
