@@ -155,12 +155,12 @@ typedef uint32_t cy_rslt_t;
 * see the library documentation for values corresonding to individual modules.
 */
 /**** DRIVER Module codes: 0x0000 - 0x00FF ****/
-/** Base identifier for peripheral driver library modules (0x0000 - 0x007F) */
+/** Base module identifier for peripheral driver library drivers (0x0000 - 0x007F) */
 #define CY_RSLT_MODULE_DRIVERS_PDL_BASE             (0x0000U)
-/** Base identifier for wireless host driver library modules (0x0080 - 0x00FF) */
+/** Base module identifier for wireless host driver library modules (0x0080 - 0x00FF) */
 #define CY_RSLT_MODULE_DRIVERS_WHD_BASE             (0x0080U)
 
-/** Base identifier for HAL modules (0x0100 - 0x017F) */
+/** Base module identifier for HAL drivers (0x0100 - 0x017F) */
 #define CY_RSLT_MODULE_ABSTRACTION_HAL_BASE         (0x0100U)
 /** Module identifier for board support package */
 #define CY_RSLT_MODULE_ABSTRACTION_BSP              (0x0180U)
@@ -173,7 +173,7 @@ typedef uint32_t cy_rslt_t;
 /** Base identifier for environment abstraction modules (0x0184 - 0x01FF) */
 #define CY_RSLT_MODULE_ABSTRACTION_ENV              (0x0184U)
 
-/** Base identifier for Board Library modules (0x01A0 - 0x01BF) */
+/** Base module identifier for Board Libraries (0x01A0 - 0x01BF) */
 #define CY_RSLT_MODULE_BOARD_LIB_BASE               (0x01A0U)
 /** Module identifier for the Retarget IO Board Library */
 #define CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO        (0x1A0U)
@@ -182,7 +182,15 @@ typedef uint32_t cy_rslt_t;
 /** Module identifier for the Serial Flash Board Library */
 #define CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH       (0x01A2U)
 
-/** Base identifier for Middleware module codes (0x0200 - 0x02FF) */
+/** Base module identifier for Shield Board Libraries (0x01C0 - 0x01DF) */
+#define CY_RSLT_MODULE_BOARD_SHIELD_BASE            (0x01C0U)
+/** Module identifier for Shield Board CY8CKIT-028-EPD */
+#define CY_RSLT_MODULE_BOARD_SHIELD_028_EPD         (0x01C0U)
+/** Module identifier for Shield Board CY8CKIT-028-TFT */
+#define CY_RSLT_MODULE_BOARD_SHIELD_028_TFT         (0x01C1U)
+
+
+/** Base module identifier for Middleware Libraries (0x0200 - 0x02FF) */
 #define CY_RSLT_MODULE_MIDDLEWARE_BASE              (0x0200U)
 
 /** \} modules */

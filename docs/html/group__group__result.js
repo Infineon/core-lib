@@ -21,6 +21,9 @@ var group__group__result =
     [ "CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO", "group__group__result.html#ga2424e0be0c1e672c829fb3798720465f", null ],
     [ "CY_RSLT_MODULE_BOARD_LIB_RGB_LED", "group__group__result.html#gaea80fb321cb0b3e298a3a2e90e445d3d", null ],
     [ "CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH", "group__group__result.html#ga0ce9bf3fc06bf768cd32558b44aaaf0f", null ],
+    [ "CY_RSLT_MODULE_BOARD_SHIELD_BASE", "group__group__result.html#ga76bcb30b36e7fea0c8165c55e561de73", null ],
+    [ "CY_RSLT_MODULE_BOARD_SHIELD_028_EPD", "group__group__result.html#gaa5b8e84947e9bf1a7fb5d8003ef276bf", null ],
+    [ "CY_RSLT_MODULE_BOARD_SHIELD_028_TFT", "group__group__result.html#ga40e8ea560bec96d98a8397308ce773cd", null ],
     [ "CY_RSLT_MODULE_MIDDLEWARE_BASE", "group__group__result.html#ga2db34d05e5194f919d6cc45957dc5047", null ],
     [ "cy_rslt_t", "group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1", null ]
 ];

@@ -7,7 +7,7 @@ The Cypress Core Library provides basic types and utilities that can be used bet
 ## Features
 
 * Common result type (`cy_rslt_t`) for reporting errors or status
-* Common utility MACROs for
+* Common APIs for
     * `CY_ASSERT`: Verifies a value and halts if invalid (if not NDEBUG)
     * `CY_HALT`: Halts the application
     * `CY_UNUSED_PARAMETER`: Avoid warnings if a function argument isn't used
