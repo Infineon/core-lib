@@ -87,22 +87,52 @@ $(document).ready(function(){initNavTree('md_core_lib_RELEASE.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Cypress Core Library 1.0.1 </div>  </div>
+<div class="title">Cypress Core Library 1.0 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The Cypress Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.</p>
-<h3>What's New In This Release?</h3>
-<ul>
-<li>Added new module IDs in cy_result.h</li>
-<li>Minor updates to documentation</li>
-</ul>
 <h3>What's Included?</h3>
 <ul>
 <li>Common result type for reporting errors or status</li>
-<li>Common APIs for<ul>
+<li>Common utility MACROs for<ul>
 <li>CY_ASSERT: Verifies a value and halts if invalid (if not NDEBUG)</li>
 <li>CY_HALT: Halts the application</li>
 <li>CY_UNUSED_PARAMETER: Avoid warnings if a function argument isn't used</li>
+<li>CY_LO8: Gets the lower 8 bits of a 16-bit value</li>
+<li>CY_HI8: Gets the upper 8 bits of a 16-bit value</li>
+<li>CY_LO16: Gets the lower 16 bits of a 32-bit value</li>
+<li>CY_HI16: Gets the upper 16 bits of a 32-bit value</li>
+<li>CY_SWAP_ENDIAN16: Swaps the byte ordering of a 16-bit value</li>
+<li>CY_SWAP_ENDIAN32: Swaps the byte ordering of a 32-bit value</li>
+<li>CY_SWAP_ENDIAN64: Swaps the byte ordering of a 64-bit value</li>
+<li>CY_GET_REG8: Reads the 8-bit value from the specified address</li>
+<li>CY_SET_REG8: Writes an 8-bit value to the specified address</li>
+<li>CY_GET_REG16: Reads the 16-bit value from the specified address</li>
+<li>CY_SET_REG16: Writes the 16-bit value to the specified address</li>
+<li>CY_GET_REG24: Reads the 24-bit value from the specified address</li>
+<li>CY_SET_REG24: Writes the 24-bit value to the specified address</li>
+<li>CY_GET_REG32: Reads the 32-bit value from the specified register</li>
+<li>CY_SET_REG32: Writes the 32-bit value to the specified register</li>
+<li>_CLR_SET_FLD32U: The macro for setting a register with a name field and value for providing get-clear-modify-write operations</li>
+<li>CY_REG32_CLR_SET: Uses _CLR_SET_FLD32U macro for providing get-clear-modify-write operations with a name field and value and writes a resulting value to the 32-bit register</li>
+<li>_CLR_SET_FLD16U: The macro for setting a 16-bit register with a name field and value for providing get-clear-modify-write operations</li>
+<li>CY_REG16_CLR_SET: Uses _CLR_SET_FLD16U macro for providing get-clear-modify-write operations with a name field and value and writes a resulting value to the 16-bit register</li>
+<li>_CLR_SET_FLD8U: The macro for setting a 8-bit register with a name field and value for providing get-clear-modify-write operations</li>
+<li>CY_REG8_CLR_SET: Uses _CLR_SET_FLD8U macro for providing get-clear-modify-write operations with a name field and value and writes a resulting value to the 8-bit register</li>
+<li>_BOOL2FLD: Returns a field mask if the value is not false</li>
+<li>_FLD2BOOL: Returns true, if the value includes the field mask</li>
+<li>CY_SYSLIB_DIV_ROUND: Calculates a / b with rounding to the nearest integer, a and b must have the same sign.</li>
+<li>CY_SYSLIB_DIV_ROUNDUP: Calculates a / b with rounding up if remainder != 0, both a and b must be positive.</li>
+</ul>
+</li>
+<li>MACROs to create cross compiler compatible code. Use the CY_NOINIT, CY_SECTION, CY_UNUSED, CY_ALIGN attributes at the first place of declaration/definition. For example: CY_NOINIT uint32_t noinitVar;<ul>
+<li>CY_NOINIT</li>
+<li>CY_SECTION</li>
+<li>CY_UNUSED</li>
+<li>CY_NOINLINE</li>
+<li>CY_ALIGN</li>
+<li>CY_RAMFUNC_BEGIN</li>
+<li>CY_RAMFUNC_END</li>
 </ul>
 </li>
 </ul>
@@ -125,10 +155,9 @@ $(document).ready(function(){initNavTree('md_core_lib_RELEASE.html','');});
 <li><a href="https://cypresssemiconductorco.github.io/core-lib/html/modules.html">API Reference Guide</a></li>
 <li><a href="http://www.cypress.com">Cypress Semiconductor</a></li>
 <li><a href="https://github.com/cypresssemiconductorco">Cypress Semiconductor GitHub</a></li>
-<li><a href="https://www.cypress.com/products/modustoolbox-software-environment">ModusToolbox</a></li>
+<li><a href="https://www.cypress.com/products/modustoolbox-software-environment">ModusToolbox</a> <hr/>
+ © Cypress Semiconductor Corporation, 2019. </li>
 </ul>
-<hr/>
-<p> © Cypress Semiconductor Corporation, 2019. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part

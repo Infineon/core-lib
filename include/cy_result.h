@@ -182,7 +182,7 @@ typedef uint32_t cy_rslt_t;
 /** Module identifier for the Serial Flash Board Library */
 #define CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH       (0x01A2U)
 
-/** Base module identifier for Shield Board Libraries (0x01C0 - 0x01DF) */
+/** Base module identifier for Shield Board Libraries (0x01C0 - 0x01FF) */
 #define CY_RSLT_MODULE_BOARD_SHIELD_BASE            (0x01C0U)
 /** Module identifier for Shield Board CY8CKIT-028-EPD */
 #define CY_RSLT_MODULE_BOARD_SHIELD_028_EPD         (0x01C0U)
