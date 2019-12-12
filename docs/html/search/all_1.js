@@ -51,5 +51,5 @@ var searchData=
   ['cy_5funused_5fparameter',['CY_UNUSED_PARAMETER',['../group__group__utils.html#ga0a73602e14d41b2d525a1185597c8445',1,'cy_utils.h']]],
   ['cypress_20core_20library',['Cypress Core Library',['../index.html',1,'']]],
   ['cypress_20core_20library',['Cypress Core Library',['../md_core_lib_README.html',1,'']]],
-  ['cypress_20core_20library_201_2e0_2e1',['Cypress Core Library 1.0.1',['../md_core_lib_RELEASE.html',1,'']]]
+  ['cypress_20core_20library_201_2e0',['Cypress Core Library 1.0',['../md_core_lib_RELEASE.html',1,'']]]
 ];
