@@ -52,4 +52,4 @@ The Cypress Core Library provides basic types and utilities that can be used bet
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation, 2019.
+© Cypress Semiconductor Corporation, 2019-2020.
