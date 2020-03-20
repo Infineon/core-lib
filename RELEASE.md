@@ -1,10 +1,6 @@
-### Cypress Core Library 1.1
+### Cypress Core Library
 The Cypress Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
 
-### Whats New?
-This release adds a number of new utility macros that were previously part of the psoc6pdl library. As of psoc6pdl v1.4 they have been merged here. See below for the full list.
-NOTE: To avoid warnings when building, make sure that psoc6pdl v1.4 or later is used with core-lib v1.1 and later.
- 
 ### What's Included?
 * Common result type for reporting errors or status
 * Common utility MACROs for
@@ -45,6 +41,17 @@ NOTE: To avoid warnings when building, make sure that psoc6pdl v1.4 or later is 
     * CY_RAMFUNC_BEGIN
     * CY_RAMFUNC_END
 
+### What Changed?
+#### v1.1.1
+* Fixed MISRA violation
+#### v1.1.0
+* Migrated numerous utility & cross compiler macros from psoc6pdl into here
+#### v1.0.1
+* Added new module IDs in cy_result.h
+* Minor updates to documentation
+#### v1.0.0
+* Initial release
+
 ### Supported Software and Tools
 This version of the Cypress Core Library was validated for compatibility with the following Software and Tools:
 
@@ -64,4 +71,4 @@ Use the following links for more information, as needed:
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation, 2019.
+© Cypress Semiconductor Corporation, 2019-2020.
