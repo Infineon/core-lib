@@ -41,7 +41,7 @@ extern "C" {
 
 /** Halt the processor in the debug state
  */
-static inline void CY_HALT()
+static inline void CY_HALT(void)
 {
     __asm("    bkpt    1");
 }
