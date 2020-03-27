@@ -1,4 +1,4 @@
-### Cypress Core Library
+# Cypress Core Library Release Notes
 The Cypress Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
 
 ### What's Included?
@@ -42,6 +42,8 @@ The Cypress Core Library provides basic types and utilities that can be used bet
     * CY_RAMFUNC_END
 
 ### What Changed?
+#### v1.1.2
+* Added new module identifiers to cy_result.h
 #### v1.1.1
 * Fixed MISRA violation
 #### v1.1.0

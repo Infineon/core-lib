@@ -5,7 +5,7 @@ var searchData=
   ['cy_5fget_5freg24',['CY_GET_REG24',['../group__group__utils.html#ga08558965aa9ed40b40be2e03382e866d',1,'cy_utils.h']]],
   ['cy_5fget_5freg32',['CY_GET_REG32',['../group__group__utils.html#ga99c7cedf249c18295512d896086dc64f',1,'cy_utils.h']]],
   ['cy_5fget_5freg8',['CY_GET_REG8',['../group__group__utils.html#ga34975c78bf005e734701b46d04811c98',1,'cy_utils.h']]],
-  ['cy_5fhalt',['CY_HALT',['../group__group__utils.html#gaa5dca89ebb9ae364075f6ac0564307e4',1,'cy_utils.h']]],
+  ['cy_5fhalt',['CY_HALT',['../group__group__utils.html#ga80391b71fc1f6ec0a82d00866a168f38',1,'cy_utils.h']]],
   ['cy_5fhi16',['CY_HI16',['../group__group__utils.html#ga4ecbc90074294a4427c78b3385281c80',1,'cy_utils.h']]],
   ['cy_5fhi8',['CY_HI8',['../group__group__utils.html#gaa57842ae9ca46f0e4b6f280e8f4eaa6c',1,'cy_utils.h']]],
   ['cy_5flo16',['CY_LO16',['../group__group__utils.html#ga58340d6e97870eff30ea323d7c529d3b',1,'cy_utils.h']]],
@@ -20,6 +20,7 @@ var searchData=
   ['cy_5frslt_5fmodule_5fabstraction_5fbsp',['CY_RSLT_MODULE_ABSTRACTION_BSP',['../group__group__result.html#ga4f6360a8bf5a570d6927d50123e95c1d',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fenv',['CY_RSLT_MODULE_ABSTRACTION_ENV',['../group__group__result.html#gad1c76e11af277ca324da1c8516d7d31a',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5ffs',['CY_RSLT_MODULE_ABSTRACTION_FS',['../group__group__result.html#ga9cde2c478cdd2b7f626bc45c2a4a0543',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fabstraction_5fhal',['CY_RSLT_MODULE_ABSTRACTION_HAL',['../group__group__result.html#gada155710418c5225c8ccaa8e75e9a577',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fhal_5fbase',['CY_RSLT_MODULE_ABSTRACTION_HAL_BASE',['../group__group__result.html#gaba8505defe4e04a5927b6e0590e256f0',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fos',['CY_RSLT_MODULE_ABSTRACTION_OS',['../group__group__result.html#ga5a59f041b014217d0d699bc3b0ae3cca',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fresource',['CY_RSLT_MODULE_ABSTRACTION_RESOURCE',['../group__group__result.html#gab757b71680be515dd43368895fa73b7d',1,'cy_result.h']]],
@@ -27,6 +28,7 @@ var searchData=
   ['cy_5frslt_5fmodule_5fboard_5flib_5fretarget_5fio',['CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO',['../group__group__result.html#ga2424e0be0c1e672c829fb3798720465f',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5flib_5frgb_5fled',['CY_RSLT_MODULE_BOARD_LIB_RGB_LED',['../group__group__result.html#gaea80fb321cb0b3e298a3a2e90e445d3d',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5flib_5fserial_5fflash',['CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH',['../group__group__result.html#ga0ce9bf3fc06bf768cd32558b44aaaf0f',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5flib_5fwhd_5fintegration',['CY_RSLT_MODULE_BOARD_LIB_WHD_INTEGRATION',['../group__group__result.html#ga927ff40c1f2cbe51a3c5c3f52c533e57',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5f028_5fepd',['CY_RSLT_MODULE_BOARD_SHIELD_028_EPD',['../group__group__result.html#gaa5b8e84947e9bf1a7fb5d8003ef276bf',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5f028_5ftft',['CY_RSLT_MODULE_BOARD_SHIELD_028_TFT',['../group__group__result.html#ga40e8ea560bec96d98a8397308ce773cd',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5fbase',['CY_RSLT_MODULE_BOARD_SHIELD_BASE',['../group__group__result.html#ga76bcb30b36e7fea0c8165c55e561de73',1,'cy_result.h']]],
@@ -51,5 +53,5 @@ var searchData=
   ['cy_5funused_5fparameter',['CY_UNUSED_PARAMETER',['../group__group__utils.html#ga0a73602e14d41b2d525a1185597c8445',1,'cy_utils.h']]],
   ['cypress_20core_20library',['Cypress Core Library',['../index.html',1,'']]],
   ['cypress_20core_20library',['Cypress Core Library',['../md_core_lib_README.html',1,'']]],
-  ['cypress_20core_20library',['Cypress Core Library',['../md_core_lib_RELEASE.html',1,'']]]
+  ['cypress_20core_20library_20release_20notes',['Cypress Core Library Release Notes',['../md_core_lib_RELEASE.html',1,'']]]
 ];
