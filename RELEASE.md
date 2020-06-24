@@ -1,5 +1,5 @@
-# Cypress Core Library Release Notes
-The Cypress Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
+# Core Library Release Notes
+The Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
 
 ### What's Included?
 * Common result type for reporting errors or status
@@ -42,6 +42,8 @@ The Cypress Core Library provides basic types and utilities that can be used bet
     * CY_RAMFUNC_END
 
 ### What Changed?
+#### v1.1.3
+* Minor update for documentation & branding
 #### v1.1.2
 * Added new module identifiers to cy_result.h
 #### v1.1.1
@@ -55,7 +57,7 @@ The Cypress Core Library provides basic types and utilities that can be used bet
 * Initial release
 
 ### Supported Software and Tools
-This version of the Cypress Core Library was validated for compatibility with the following Software and Tools:
+This version of the Core Library was validated for compatibility with the following Software and Tools:
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
@@ -68,7 +70,7 @@ This version of the Cypress Core Library was validated for compatibility with th
 ### More information
 Use the following links for more information, as needed:
 * [API Reference Guide](https://cypresssemiconductorco.github.io/core-lib/html/modules.html)
-* [Cypress Semiconductor](http://www.cypress.com)
+* [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 

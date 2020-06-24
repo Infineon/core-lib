@@ -23,8 +23,8 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Cypress Core Library (core-lib)", "index.html", [
-    [ "Cypress Core Library", "index.html", null ],
+  [ "Core Library (core-lib)", "index.html", [
+    [ "Core Library", "index.html", null ],
     [ "API Reference", "modules.html", "modules" ]
   ] ]
 ];

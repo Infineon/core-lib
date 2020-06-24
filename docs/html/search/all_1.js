@@ -24,6 +24,14 @@ var searchData=
   ['cy_5frslt_5fmodule_5fabstraction_5fhal_5fbase',['CY_RSLT_MODULE_ABSTRACTION_HAL_BASE',['../group__group__result.html#gaba8505defe4e04a5927b6e0590e256f0',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fos',['CY_RSLT_MODULE_ABSTRACTION_OS',['../group__group__result.html#ga5a59f041b014217d0d699bc3b0ae3cca',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fabstraction_5fresource',['CY_RSLT_MODULE_ABSTRACTION_RESOURCE',['../group__group__result.html#gab757b71680be515dd43368895fa73b7d',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fak4954a',['CY_RSLT_MODULE_BOARD_HARDWARE_AK4954A',['../group__group__result.html#ga3cb51b341c4dac2984d76e0ab00056bb',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fbase',['CY_RSLT_MODULE_BOARD_HARDWARE_BASE',['../group__group__result.html#ga57f83cdac42fe9fc2afbe82609a00d74',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fbmi160',['CY_RSLT_MODULE_BOARD_HARDWARE_BMI160',['../group__group__result.html#ga19d6abe548162ac238afbc69ace1a2d4',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fe2271cs021',['CY_RSLT_MODULE_BOARD_HARDWARE_E2271CS021',['../group__group__result.html#ga36f615a1ecf7bba46416720e0892c115',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5flight_5fsensor',['CY_RSLT_MODULE_BOARD_HARDWARE_LIGHT_SENSOR',['../group__group__result.html#ga929b1c06f7aa2a85ea6e3c317c3d5cf6',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fssd1306',['CY_RSLT_MODULE_BOARD_HARDWARE_SSD1306',['../group__group__result.html#ga9c77295c2fb9f887a857b8b63810f18d',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fst7789v',['CY_RSLT_MODULE_BOARD_HARDWARE_ST7789V',['../group__group__result.html#ga646b094bb857dcf1bdf21448224f8b7a',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fhardware_5fthermistor',['CY_RSLT_MODULE_BOARD_HARDWARE_THERMISTOR',['../group__group__result.html#ga052784c9e3c64b33e5d056aa1db57c59',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5flib_5fbase',['CY_RSLT_MODULE_BOARD_LIB_BASE',['../group__group__result.html#ga809314d87ef1e8f175564e88ccef70a9',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5flib_5fretarget_5fio',['CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO',['../group__group__result.html#ga2424e0be0c1e672c829fb3798720465f',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5flib_5frgb_5fled',['CY_RSLT_MODULE_BOARD_LIB_RGB_LED',['../group__group__result.html#gaea80fb321cb0b3e298a3a2e90e445d3d',1,'cy_result.h']]],
@@ -31,6 +39,7 @@ var searchData=
   ['cy_5frslt_5fmodule_5fboard_5flib_5fwhd_5fintegration',['CY_RSLT_MODULE_BOARD_LIB_WHD_INTEGRATION',['../group__group__result.html#ga927ff40c1f2cbe51a3c5c3f52c533e57',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5f028_5fepd',['CY_RSLT_MODULE_BOARD_SHIELD_028_EPD',['../group__group__result.html#gaa5b8e84947e9bf1a7fb5d8003ef276bf',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5f028_5ftft',['CY_RSLT_MODULE_BOARD_SHIELD_028_TFT',['../group__group__result.html#ga40e8ea560bec96d98a8397308ce773cd',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fboard_5fshield_5f032',['CY_RSLT_MODULE_BOARD_SHIELD_032',['../group__group__result.html#gad3e437a0d81d24329914409b890d05e9',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fboard_5fshield_5fbase',['CY_RSLT_MODULE_BOARD_SHIELD_BASE',['../group__group__result.html#ga76bcb30b36e7fea0c8165c55e561de73',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fdrivers_5fpdl_5fbase',['CY_RSLT_MODULE_DRIVERS_PDL_BASE',['../group__group__result.html#gaf229ad57884c3c8e4c5ecc7f217ce8aa',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fdrivers_5fwhd_5fbase',['CY_RSLT_MODULE_DRIVERS_WHD_BASE',['../group__group__result.html#ga328dd4831cad3621a05e3fad151f9cd5',1,'cy_result.h']]],
@@ -51,7 +60,5 @@ var searchData=
   ['cy_5fsyslib_5fdiv_5fround',['CY_SYSLIB_DIV_ROUND',['../group__group__utils.html#ga05f244da002bc0c7dc9c1475053f8cfd',1,'cy_utils.h']]],
   ['cy_5fsyslib_5fdiv_5froundup',['CY_SYSLIB_DIV_ROUNDUP',['../group__group__utils.html#ga7b4264645556dd22feb8b877a283e2a2',1,'cy_utils.h']]],
   ['cy_5funused_5fparameter',['CY_UNUSED_PARAMETER',['../group__group__utils.html#ga0a73602e14d41b2d525a1185597c8445',1,'cy_utils.h']]],
-  ['cypress_20core_20library',['Cypress Core Library',['../index.html',1,'']]],
-  ['cypress_20core_20library',['Cypress Core Library',['../md_core_lib_README.html',1,'']]],
-  ['cypress_20core_20library_20release_20notes',['Cypress Core Library Release Notes',['../md_core_lib_RELEASE.html',1,'']]]
+  ['core_20library',['Core Library',['../index.html',1,'']]]
 ];

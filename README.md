@@ -1,8 +1,8 @@
-# Cypress Core Library
+# Core Library
 
 ## Overview
 
-The Cypress Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
+The Core Library provides basic types and utilities that can be used between different devices. This allows different libraries to share common items between themselves to avoid reimplementation and promote consistency.
 
 ## Features
 
@@ -47,7 +47,7 @@ The Cypress Core Library provides basic types and utilities that can be used bet
 
 ## More information
 * [API Reference Guide](https://cypresssemiconductorco.github.io/core-lib/html/modules.html)
-* [Cypress Semiconductor](http://www.cypress.com)
+* [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
