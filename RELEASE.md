@@ -42,6 +42,8 @@ The Core Library provides basic types and utilities that can be used between dif
     * CY_RAMFUNC_END
 
 ### What Changed?
+#### v1.1.4
+* Minor updates for MISRA & documentation
 #### v1.1.3
 * Minor update for documentation & branding
 #### v1.1.2
@@ -61,11 +63,12 @@ This version of the Core Library was validated for compatibility with the follow
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox Software Environment         | 2.0     |
-| GCC Compiler                              | 7.4     |
-| IAR Compiler                              | 8.32    |
+| ModusToolbox Software Environment         | 2.1     |
+| GCC Compiler                              | 9.2     |
+| IAR Compiler                              | 8.4     |
 | ARM Compiler                              | 6.11    |
 
+Minimum required ModusToolbox Software Environment: v2.0
 
 ### More information
 Use the following links for more information, as needed:
