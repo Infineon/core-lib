@@ -1,54 +1,53 @@
-/***************************************************************************//**
-* \file cy_result.h
-*
-* \brief
-* Basic function result handling. Defines a simple type for conveying
-* information about whether something succeeded or details about any issues
-* that were detected.
-*
-********************************************************************************
-* \copyright
-* Copyright 2018-2020 Cypress Semiconductor Corporation
-* SPDX-License-Identifier: Apache-2.0
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*******************************************************************************/
+/***********************************************************************************************//**
+ * \file cy_result.h
+ *
+ * \brief
+ * Basic function result handling. Defines a simple type for conveying
+ * information about whether something succeeded or details about any issues
+ * that were detected.
+ *
+ ***************************************************************************************************
+ * \copyright
+ * Copyright 2018-2021 Cypress Semiconductor Corporation
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ **************************************************************************************************/
 
 /**
-* \addtogroup group_result Result Type
-* \ingroup group_abstraction
-* \{
-* \anchor anchor_general_description
-* \brief Defines a type and related utilities for function result handling.
-*
-* The @ref cy_rslt_t type is a structured bitfield which encodes information
-* about result type, the originating module, and a code for the specific
-* error (or warning etc). In order to extract these individual fields from
-* a @ref cy_rslt_t value, the utility macros @ref CY_RSLT_GET_TYPE, @ref CY_RSLT_GET_MODULE,
-* and @ref CY_RSLT_GET_CODE are provided. For example:
-* \code
-* cy_rslt_t result = cy_hal_do_operation(arg);
-* // Will be CY_RSLT_TYPE_INFO, CY_RSLT_TYPE_WARNING, CY_RSLT_TYPE_ERROR, or CY_RSLT_TYPE_FATAL
-* uint8_t type = CY_RSLT_GET_TYPE(result)
-* // See the "Modules" section for possible values
-* uint16_t module_id = CY_RSLT_GET_MODULE(result);
-* // Specific error codes are defined by each module
-* uint16_t error_code = CY_RSLT_GET_CODE(result);
-* \endcode
-*/
+ * \addtogroup group_result Result Type
+ * \ingroup group_abstraction
+ * \{
+ * \anchor anchor_general_description
+ * \brief Defines a type and related utilities for function result handling.
+ *
+ * The @ref cy_rslt_t type is a structured bitfield which encodes information
+ * about result type, the originating module, and a code for the specific
+ * error (or warning etc). In order to extract these individual fields from
+ * a @ref cy_rslt_t value, the utility macros @ref CY_RSLT_GET_TYPE, @ref CY_RSLT_GET_MODULE,
+ * and @ref CY_RSLT_GET_CODE are provided. For example:
+ * \code
+ * cy_rslt_t result = cy_hal_do_operation(arg);
+ * // Will be CY_RSLT_TYPE_INFO, CY_RSLT_TYPE_WARNING, CY_RSLT_TYPE_ERROR, or CY_RSLT_TYPE_FATAL
+ * uint8_t type = CY_RSLT_GET_TYPE(result)
+ * // See the "Modules" section for possible values
+ * uint16_t module_id = CY_RSLT_GET_MODULE(result);
+ * // Specific error codes are defined by each module
+ * uint16_t error_code = CY_RSLT_GET_CODE(result);
+ * \endcode
+ */
 
-#if !defined(CY_RESULT_H)
-#define CY_RESULT_H
+#pragma once
 
 #include <stdint.h>
 
@@ -57,11 +56,11 @@ extern "C" {
 #endif
 
 /**
-  * @brief Provides the result of an operation as a structured bitfield.
-  *
-  * See the \ref anchor_general_description "General Description"
-  * for more details on structure and usage.
-  */
+ * @brief Provides the result of an operation as a structured bitfield.
+ *
+ * See the \ref anchor_general_description "General Description"
+ * for more details on structure and usage.
+ */
 typedef uint32_t cy_rslt_t;
 
 /** @ref cy_rslt_t return value indicating success */
@@ -94,35 +93,38 @@ typedef uint32_t cy_rslt_t;
 /** \endcond */
 
 /**
-* \{
-* @name Fields
-* Utility macros for constructing result values and extracting individual fields from existing results.
-*/
+ * \{
+ * @name Fields
+ * Utility macros for constructing result values and extracting individual fields from existing
+ * results.
+ */
 
 /**
-  * @brief Get the value of the result type field
-  * @param x the @ref cy_rslt_t value from which to extract the result type
-  */
+ * @brief Get the value of the result type field
+ * @param x the @ref cy_rslt_t value from which to extract the result type
+ */
 #define CY_RSLT_GET_TYPE(x)                (((x) >> CY_RSLT_TYPE_POSITION) & CY_RSLT_TYPE_MASK)
 /**
-  * @brief Get the value of the module identifier field
-  * @param x the @ref cy_rslt_t value from which to extract the module id
-  */
+ * @brief Get the value of the module identifier field
+ * @param x the @ref cy_rslt_t value from which to extract the module id
+ */
 #define CY_RSLT_GET_MODULE(x)              (((x) >> CY_RSLT_MODULE_POSITION) & CY_RSLT_MODULE_MASK)
 /**
-  * @brief Get the value of the result code field
-  * @param x the @ref cy_rslt_t value from which to extract the result code
-  */
+ * @brief Get the value of the result code field
+ * @param x the @ref cy_rslt_t value from which to extract the result code
+ */
 #define CY_RSLT_GET_CODE(x)                (((x) >> CY_RSLT_CODE_POSITION) & CY_RSLT_CODE_MASK)
 
 /**
-  * @brief Create a new @ref cy_rslt_t value that encodes the specified type, module, and result code.
-  * @param type one of @ref CY_RSLT_TYPE_INFO, @ref CY_RSLT_TYPE_WARNING,
-  *  @ref CY_RSLT_TYPE_ERROR, @ref CY_RSLT_TYPE_FATAL
-  * @param module Identifies the module where this result originated; see @ref anchor_modules "Modules".
-  * @param code a module-defined identifier to identify the specific situation that
-  * this result describes.
-  */
+ * @brief Create a new @ref cy_rslt_t value that encodes the specified type, module, and result
+ * code.
+ * @param type one of @ref CY_RSLT_TYPE_INFO, @ref CY_RSLT_TYPE_WARNING,
+ *  @ref CY_RSLT_TYPE_ERROR, @ref CY_RSLT_TYPE_FATAL
+ * @param module Identifies the module where this result originated; see @ref anchor_modules
+ * "Modules".
+ * @param code a module-defined identifier to identify the specific situation that
+ * this result describes.
+ */
 #define CY_RSLT_CREATE(type, module, code) \
     ((((module) & CY_RSLT_MODULE_MASK) << CY_RSLT_MODULE_POSITION) | \
     (((code) & CY_RSLT_CODE_MASK) << CY_RSLT_CODE_POSITION) | \
@@ -131,10 +133,10 @@ typedef uint32_t cy_rslt_t;
 /** \} fields */
 
 /**
-* \{
-* @name Result Types
-* Defines codes to identify the type of result.
-*/
+ * \{
+ * @name Result Types
+ * Defines codes to identify the type of result.
+ */
 
 /** @brief The result code is informational-only */
 #define CY_RSLT_TYPE_INFO                  (0U)
@@ -148,14 +150,14 @@ typedef uint32_t cy_rslt_t;
 /** \} severity */
 
 /**
-* \{
-* @name Modules
-* @anchor anchor_modules
-* Defines codes to identify the module from which an error originated.
-* For some large libraries, a range of module codes is defined here;
-* see the library documentation for values corresponding to individual modules.
-* Valid range is 0x0000-0x4000.
-*/
+ * \{
+ * @name Modules
+ * @anchor anchor_modules
+ * Defines codes to identify the module from which an error originated.
+ * For some large libraries, a range of module codes is defined here;
+ * see the library documentation for values corresponding to individual modules.
+ * Valid range is 0x0000-0x4000.
+ */
 /**** DRIVER Module codes: 0x0000 - 0x00FF ****/
 /** Base module identifier for peripheral driver library drivers (0x0000 - 0x007F) */
 #define CY_RSLT_MODULE_DRIVERS_PDL_BASE             (0x0000U)
@@ -217,12 +219,15 @@ typedef uint32_t cy_rslt_t;
 /** Base module identifier for Middleware Libraries (0x0200 - 0x02FF) */
 #define CY_RSLT_MODULE_MIDDLEWARE_BASE              (0x0200U)
 
+/** Module identifier for the KV Store Middleware Library */
+#define CY_RSLT_MODULE_MIDDLEWARE_KVSTORE           (0x0250U)
+/** Module identifier for the LIN Middleware Library */
+#define CY_RSLT_MODULE_MIDDLEWARE_LIN               (0x0251U)
+
 /** \} modules */
 
 #ifdef __cplusplus
 }
 #endif
-
-#endif /* CY_RESULT_H */
 
 /** \} group_result */

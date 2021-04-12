@@ -44,6 +44,8 @@ var searchData=
   ['cy_5frslt_5fmodule_5fdrivers_5fpdl_5fbase',['CY_RSLT_MODULE_DRIVERS_PDL_BASE',['../group__group__result.html#gaf229ad57884c3c8e4c5ecc7f217ce8aa',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fdrivers_5fwhd_5fbase',['CY_RSLT_MODULE_DRIVERS_WHD_BASE',['../group__group__result.html#ga328dd4831cad3621a05e3fad151f9cd5',1,'cy_result.h']]],
   ['cy_5frslt_5fmodule_5fmiddleware_5fbase',['CY_RSLT_MODULE_MIDDLEWARE_BASE',['../group__group__result.html#ga2db34d05e5194f919d6cc45957dc5047',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fmiddleware_5fkvstore',['CY_RSLT_MODULE_MIDDLEWARE_KVSTORE',['../group__group__result.html#gaa54124f68424276562260586e908df10',1,'cy_result.h']]],
+  ['cy_5frslt_5fmodule_5fmiddleware_5flin',['CY_RSLT_MODULE_MIDDLEWARE_LIN',['../group__group__result.html#ga5892492d2e108e89c39914a604f816a7',1,'cy_result.h']]],
   ['cy_5frslt_5fsuccess',['CY_RSLT_SUCCESS',['../group__group__result.html#gaf58fac450d9fff4472f03ad68f6e546e',1,'cy_result.h']]],
   ['cy_5frslt_5ft',['cy_rslt_t',['../group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1',1,'cy_result.h']]],
   ['cy_5frslt_5ftype_5ferror',['CY_RSLT_TYPE_ERROR',['../group__group__result.html#ga8d656d344524464af71296f2140a7b37',1,'cy_result.h']]],

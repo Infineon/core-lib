@@ -36,5 +36,7 @@ var group__group__result =
     [ "CY_RSLT_MODULE_BOARD_HARDWARE_LIGHT_SENSOR", "group__group__result.html#ga929b1c06f7aa2a85ea6e3c317c3d5cf6", null ],
     [ "CY_RSLT_MODULE_BOARD_HARDWARE_AK4954A", "group__group__result.html#ga3cb51b341c4dac2984d76e0ab00056bb", null ],
     [ "CY_RSLT_MODULE_MIDDLEWARE_BASE", "group__group__result.html#ga2db34d05e5194f919d6cc45957dc5047", null ],
+    [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE", "group__group__result.html#gaa54124f68424276562260586e908df10", null ],
+    [ "CY_RSLT_MODULE_MIDDLEWARE_LIN", "group__group__result.html#ga5892492d2e108e89c39914a604f816a7", null ],
     [ "cy_rslt_t", "group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1", null ]
 ];
