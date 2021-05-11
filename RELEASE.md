@@ -42,6 +42,9 @@ The Core Library provides basic types and utilities that can be used between dif
     * CY_RAMFUNC_END
 
 ### What Changed?
+#### v1.2.0
+* Added a new cy_rslt_decode_t that provides better debugging experience when examining result codes
+* Converted module identifiers into enums to provide better debugging experience
 #### v1.1.5
 * Minor updates including new module id definitions
 #### v1.1.4
