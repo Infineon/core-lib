@@ -6,7 +6,9 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2021 Cypress Semiconductor Corporation
+ * Copyright 2018-2021 Cypress Semiconductor Corporation (an Infineon company) or
+ * an affiliate of Cypress Semiconductor Corporation
+ *
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,7 +40,7 @@
 extern "C" {
 #endif
 
-/** Simple macro to supress the unused parameter warning by casting to void. */
+/** Simple macro to suppress the unused parameter warning by casting to void. */
 #define CY_UNUSED_PARAMETER(x) ( (void)(x) )
 
 /** Halt the processor in the debug state

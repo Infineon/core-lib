@@ -116,6 +116,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga711a53e03635b4f3e21c41aaf9459251"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__result.html#ga711a53e03635b4f3e21c41aaf9459251">CY_RSLT_CREATE</a>(type,  module,  code)</td></tr>
 <tr class="memdesc:ga711a53e03635b4f3e21c41aaf9459251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value that encodes the specified type, module, and result code.  <a href="#ga711a53e03635b4f3e21c41aaf9459251">More...</a><br /></td></tr>
 <tr class="separator:ga711a53e03635b4f3e21c41aaf9459251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b3e119b13a8bb398f429a22d8cf4dcd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__result.html#ga7b3e119b13a8bb398f429a22d8cf4dcd">CY_RSLT_CREATE_EX</a>(type,  module,  submodule,  code)</td></tr>
+<tr class="memdesc:ga7b3e119b13a8bb398f429a22d8cf4dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value that encodes the specified type, module and result code.  <a href="#ga7b3e119b13a8bb398f429a22d8cf4dcd">More...</a><br /></td></tr>
+<tr class="separator:ga7b3e119b13a8bb398f429a22d8cf4dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -317,6 +320,8 @@ Modules</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ae69aa06234a499474538f623bb894d0e">CY_RSLT_MODULE_MIDDLEWARE_HTTP_CLIENT</a> = 0x20e, 
 <br />
+&#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a039aedf17b75679fd45fa19a129f7959">CY_RSLT_MODULE_MIDDLEWARE_ML</a> = 0x20f, 
+<br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a3e046d2c923cd2d31dc65dfd758e3214">CY_RSLT_MODULE_MIDDLEWARE_KVSTORE</a> = 0x250, 
 <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab2647d2f7d4942233e5f778f8226f5e9">CY_RSLT_MODULE_MIDDLEWARE_LIN</a> = 0x0251
@@ -504,12 +509,63 @@ The 14bit module id. </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((((module) &amp; CY_RSLT_MODULE_MASK) &lt;&lt; CY_RSLT_MODULE_POSITION) | \</div><div class="line">    (((code) &amp; CY_RSLT_CODE_MASK) &lt;&lt; CY_RSLT_CODE_POSITION) | \</div><div class="line">    (((type) &amp; CY_RSLT_TYPE_MASK) &lt;&lt; CY_RSLT_TYPE_POSITION))</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">((((uint16_t) (module) &amp; CY_RSLT_MODULE_MASK) &lt;&lt; CY_RSLT_MODULE_POSITION) | \</div><div class="line">    ((((uint16_t) code) &amp; CY_RSLT_CODE_MASK) &lt;&lt; CY_RSLT_CODE_POSITION) | \</div><div class="line">    ((((uint16_t) type) &amp; CY_RSLT_TYPE_MASK) &lt;&lt; CY_RSLT_TYPE_POSITION))</div></div><!-- fragment -->
 <p>Create a new <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value that encodes the specified type, module, and result code. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>one of <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a7183d5765ef684a2de4efd4807dc5d8c">CY_RSLT_TYPE_INFO</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a63c4a05c8e5321bd44378a894fb947f5">CY_RSLT_TYPE_WARNING</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79aac3d9861cc429ed0a29962e7829f4160">CY_RSLT_TYPE_ERROR</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a5488dc323f5af93ad1c0218670aad405">CY_RSLT_TYPE_FATAL</a> </td></tr>
     <tr><td class="paramname">module</td><td>Identifies the module where this result originated; see <a class="el" href="group__group__result.html#anchor_modules">Modules</a>. </td></tr>
+    <tr><td class="paramname">code</td><td>a module-defined identifier to identify the specific situation that this result describes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7b3e119b13a8bb398f429a22d8cf4dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b3e119b13a8bb398f429a22d8cf4dcd">&#9670;&nbsp;</a></span>CY_RSLT_CREATE_EX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_RSLT_CREATE_EX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">module, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">submodule, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">code&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(((((uint16_t) module) &amp; CY_RSLT_MODULE_MASK) &lt;&lt; CY_RSLT_MODULE_POSITION) | \</div><div class="line">    ((((((((uint16_t)submodule) &amp; CY_RSLT_SUBMODULE_MASK) &lt;&lt; CY_RSLT_SUBMODULE_POSITION) | \</div><div class="line">    ((uint16_t) code)) &amp; CY_RSLT_CODE_MASK) &lt;&lt; CY_RSLT_CODE_POSITION)) | \</div><div class="line">    ((((uint16_t) type) &amp; CY_RSLT_TYPE_MASK) &lt;&lt; CY_RSLT_TYPE_POSITION))</div></div><!-- fragment -->
+<p>Create a new <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value that encodes the specified type, module and result code. </p>
+<p>This is a variant of <a class="el" href="group__group__result.html#ga711a53e03635b4f3e21c41aaf9459251">CY_RSLT_CREATE</a> for result codes that need to handle submodules as well. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>one of <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a7183d5765ef684a2de4efd4807dc5d8c">CY_RSLT_TYPE_INFO</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a63c4a05c8e5321bd44378a894fb947f5">CY_RSLT_TYPE_WARNING</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79aac3d9861cc429ed0a29962e7829f4160">CY_RSLT_TYPE_ERROR</a>, <a class="el" href="group__group__result.html#gga379d2c0a6a4ef22f04e53e8eb4c9ee79a5488dc323f5af93ad1c0218670aad405">CY_RSLT_TYPE_FATAL</a> </td></tr>
+    <tr><td class="paramname">module</td><td>Identifies the module where this result originated; see <a class="el" href="group__group__result.html#anchor_modules">Modules</a>. </td></tr>
+    <tr><td class="paramname">submodule</td><td>An asset defined subset of the module. The submodule consumes part of the "code" section and thus the size of the valid code is then reduced. </td></tr>
     <tr><td class="paramname">code</td><td>a module-defined identifier to identify the specific situation that this result describes. </td></tr>
   </table>
   </dd>
@@ -576,7 +632,7 @@ The 14bit module id. </td></tr>
 </div><div class="memdoc">
 
 <p>Define codes to identify the module from which an error originated. </p>
-<dl class="section note"><dt>Note</dt><dd>This is provided as a debugging convenience tool, not as a definitive list of all module IDs. Due to the distributed nature of ModusToolbox, each library has its own release schedule. It is possible that some module IDs may not appear in the enumeration yet. Missing items are expected to be added over time. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is provided as a debugging convenience tool, not as a definitive list of all module IDs. Due to the distributed nature of ModusToolbox™, each library has its own release schedule. It is possible that some module IDs may not appear in the enumeration yet. Missing items are expected to be added over time. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a56e06a06124185c15f410e6cc202365f"></a>CY_RSLT_MODULE_DRIVER_SAR&#160;</td><td class="fielddoc"><p>Module identifier for the SAR driver. </p>
 <p>Asset(s): (mtb-pdl-cat1, mtb-pdl-cat2) </p>
@@ -763,7 +819,7 @@ The 14bit module id. </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a90928a282c363a6806870d1c38495194"></a>CY_RSLT_MODULE_BOARD_HARDWARE_BMX160&#160;</td><td class="fielddoc"><p>Module identifier for the BMI160 Motion Sensor Library. </p>
 <p>Asset(s): (sensor-orientation-bmx160) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a0242f12b289ccd2f7d407f5deb3ea116"></a>CY_RSLT_MODULE_BOARD_HARDWARE_DPS3XX&#160;</td><td class="fielddoc"><p>Module identifier for the XENSIV DPS3XX Pressure Sensor Library. </p>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a0242f12b289ccd2f7d407f5deb3ea116"></a>CY_RSLT_MODULE_BOARD_HARDWARE_DPS3XX&#160;</td><td class="fielddoc"><p>Module identifier for the XENSIV™ DPS3XX Pressure Sensor Library. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0aaa418c782ce87fab530d277e60def871"></a>CY_RSLT_MODULE_BOARD_HARDWARE_WM8960&#160;</td><td class="fielddoc"><p>Module identifier for the WM8960 Audio Codec Library. </p>
 </td></tr>
@@ -811,6 +867,9 @@ The 14bit module id. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0ae69aa06234a499474538f623bb894d0e"></a>CY_RSLT_MODULE_MIDDLEWARE_HTTP_CLIENT&#160;</td><td class="fielddoc"><p>Module identifier for the HTTP Clinet library. </p>
 <p>Asset(s): (http-client) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a039aedf17b75679fd45fa19a129f7959"></a>CY_RSLT_MODULE_MIDDLEWARE_ML&#160;</td><td class="fielddoc"><p>Module identifier for the Machine Learning(ML) library. </p>
+<p>Asset(s): (ml-middleware) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a3e046d2c923cd2d31dc65dfd758e3214"></a>CY_RSLT_MODULE_MIDDLEWARE_KVSTORE&#160;</td><td class="fielddoc"><p>Module identifier for the KV Store Middleware Library. </p>
 <p>Asset(s): (kv-store) </p>
