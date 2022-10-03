@@ -6,7 +6,7 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2021 Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2018-2022 Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -105,7 +105,9 @@ static inline void CY_HALT(void)
  * attributes at the first place of declaration/definition.
  * For example: CY_NOINIT uint32_t noinitVar;
  */
-    #if (__ARMCC_VERSION >= 6010050)
+    #if (__ARMCC_VERSION >= 6160001)
+        #define CY_NOINIT           __attribute__ ((section(".bss.noinit")))
+    #elif (__ARMCC_VERSION >= 6010050)
         #define CY_NOINIT           __attribute__ ((section(".noinit")))
     #else
         #define CY_NOINIT           __attribute__ ((section(".noinit"), zero_init))

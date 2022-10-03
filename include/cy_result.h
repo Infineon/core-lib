@@ -8,7 +8,7 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2021 Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2018-2022 Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -331,10 +331,17 @@ typedef enum
     /** Module identifier for the BMI160 Motion Sensor Library.
        Asset(s): (sensor-orientation-bmx160) */
     CY_RSLT_MODULE_BOARD_HARDWARE_BMX160 = 0x01C7,
-    /** Module identifier for the XENSIV™  DPS3XX Pressure Sensor Library */
+    /** Module identifier for the XENSIV™ DPS3XX Pressure Sensor Library.
+       Asset(s): (sensor-xensiv-dps3xx) */
     CY_RSLT_MODULE_BOARD_HARDWARE_DPS3XX = 0x01C8,
-    /** Module identifier for the WM8960 Audio Codec Library */
+    /** Module identifier for the WM8960 Audio Codec Library. Asset(s): (audio-codec-wm8960) */
     CY_RSLT_MODULE_BOARD_HARDWARE_WM8960 = 0x01C9,
+    /** Module identifier for the XENSIV™ PAS CO2 Sensor Library.
+       Asset(s): (sensor-xensiv-pasco2) */
+    CY_RSLT_MODULE_BOARD_HARDWARE_XENSIV_PASCO2 = 0x01CA,
+    /** Module identifier for the XENSIV™ BGT60TRxx Sensor Library.
+       Asset(s): (sensor-xensiv-bgt60trxx) */
+    CY_RSLT_MODULE_BOARD_HARDWARE_XENSIV_BGT60TRXX = 0x01CC,
 
     /** Module identifier for the MDNS library. Asset(s): (mdns) */
     CY_RSLT_MODULE_MIDDLEWARE_MNDS = 0x200,
