@@ -85,12 +85,13 @@ $(document).ready(function(){initNavTree('group__group__utils.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Utilities</div></div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
-<p >Basic utility macros and functions. </p>
+<p >Basic utility types, macros and functions. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -187,6 +188,21 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga7b4264645556dd22feb8b877a283e2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a / b with rounding up if remainder != 0, both a and b must be positive. <br /></td></tr>
 <tr class="separator:ga7b4264645556dd22feb8b877a283e2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae697a4ada82def1cf266ce7ad7c8fdbd"><td class="memItemLeft" align="right" valign="top"><a id="gae697a4ada82def1cf266ce7ad7c8fdbd" name="gae697a4ada82def1cf266ce7ad7c8fdbd"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>cy_char8_t</b></td></tr>
+<tr class="memdesc:gae697a4ada82def1cf266ce7ad7c8fdbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific-length typedef for the basic numerical types of char. <br /></td></tr>
+<tr class="separator:gae697a4ada82def1cf266ce7ad7c8fdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20c5888c9b8f65b00bcb57c74d774823"><td class="memItemLeft" align="right" valign="top"><a id="ga20c5888c9b8f65b00bcb57c74d774823" name="ga20c5888c9b8f65b00bcb57c74d774823"></a>
+typedef float&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float32_t</b></td></tr>
+<tr class="memdesc:ga20c5888c9b8f65b00bcb57c74d774823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific-length typedef for the basic numerical types of float. <br /></td></tr>
+<tr class="separator:ga20c5888c9b8f65b00bcb57c74d774823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94dedc99abc3e2712686cbf960a1bb5c"><td class="memItemLeft" align="right" valign="top"><a id="ga94dedc99abc3e2712686cbf960a1bb5c" name="ga94dedc99abc3e2712686cbf960a1bb5c"></a>
+typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_t</b></td></tr>
+<tr class="memdesc:ga94dedc99abc3e2712686cbf960a1bb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific-length typedef for the basic numerical types of double. <br /></td></tr>
+<tr class="separator:ga94dedc99abc3e2712686cbf960a1bb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga80391b71fc1f6ec0a82d00866a168f38"><td class="memItemLeft" align="right" valign="top"><a id="ga80391b71fc1f6ec0a82d00866a168f38" name="ga80391b71fc1f6ec0a82d00866a168f38"></a>
@@ -260,7 +276,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CY_HALT</b> (v
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                ((uint64_t) (((uint64_t) <a class="code hl_define" href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a>((uint32_t)(x)) &lt;&lt; 32U) | \</div>
 <div class="line">                                CY_SWAP_ENDIAN32((uint32_t)((x) &gt;&gt; 32U))))</div>
-<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:91</div></div>
+<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:100</div></div>
 </div><!-- fragment -->
 <p>Swap the byte ordering of a 64-bit value. </p>
 

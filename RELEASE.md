@@ -42,6 +42,10 @@ The Core Library provides basic types and utilities that can be used between dif
     * CY_RAMFUNC_END
 
 ### What Changed?
+
+#### v1.4.0
+* Added new module identifiers to cy_result.h
+* Add typedefs to convey width in scenarios where there are no standard fixed-width types.
 #### v1.3.1
 * Added new entries to cy_en_rslt_module_t
 * Update CY_NOINIT to support newer ARM compiler 6.16
@@ -88,4 +92,4 @@ Use the following links for more information, as needed:
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2023.

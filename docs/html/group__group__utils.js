@@ -27,5 +27,8 @@ var group__group__utils =
     [ "_FLD2BOOL", "group__group__utils.html#ga8d9ee76c64031ffe440b12e55bf6947d", null ],
     [ "CY_SYSLIB_DIV_ROUND", "group__group__utils.html#ga05f244da002bc0c7dc9c1475053f8cfd", null ],
     [ "CY_SYSLIB_DIV_ROUNDUP", "group__group__utils.html#ga7b4264645556dd22feb8b877a283e2a2", null ],
+    [ "cy_char8_t", "group__group__utils.html#gae697a4ada82def1cf266ce7ad7c8fdbd", null ],
+    [ "cy_float32_t", "group__group__utils.html#ga20c5888c9b8f65b00bcb57c74d774823", null ],
+    [ "cy_float64_t", "group__group__utils.html#ga94dedc99abc3e2712686cbf960a1bb5c", null ],
     [ "CY_HALT", "group__group__utils.html#ga80391b71fc1f6ec0a82d00866a168f38", null ]
 ];
