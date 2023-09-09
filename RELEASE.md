@@ -43,6 +43,8 @@ The Core Library provides basic types and utilities that can be used between dif
 
 ### What Changed?
 
+#### v1.4.1
+* Added new module identifiers to cy_result.h
 #### v1.4.0
 * Added new module identifiers to cy_result.h
 * Add typedefs to convey width in scenarios where there are no standard fixed-width types.

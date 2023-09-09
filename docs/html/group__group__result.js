@@ -80,6 +80,8 @@ var group__group__result =
       [ "CY_RSLT_MODULE_ABSTRACTION_FS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0db8ba50b42ea6c23d064bae363f78bc", null ],
       [ "CY_RSLT_MODULE_ABSTRACTION_RESOURCE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0af78d32027da7fd19e9fe407b603896f1", null ],
       [ "CY_RSLT_MODULE_ABSTRACTION_OS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a250113bb54209623f84b4bac3a81fe86", null ],
+      [ "CY_RSLT_MODULE_ABSTRACTION_DATA_STREAMING", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac9aa2b08f14ccaedb2fc6ba16ab86ad6", null ],
+      [ "CY_RSLT_MODULE_ABSTRACTION_BLOCK_STORAGE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab5376c551591900838661970cebec23f", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0a03f3213be996966a0308e7afe9e409", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_RGB_LED", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a55d1a53e882ccd03bc3b1390842d4cc0", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab8644287d23132c02ebde79677114ab7", null ],
@@ -117,6 +119,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_MIDDLEWARE_OTA_UPDATE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a7084c73c25435f6816fe6788a29f09e9", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_HTTP_CLIENT", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ae69aa06234a499474538f623bb894d0e", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_ML", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a039aedf17b75679fd45fa19a129f7959", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_EM_EEPROM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac819d5f89168aead93b2a6cfa008fc00", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a3e046d2c923cd2d31dc65dfd758e3214", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_LIN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab2647d2f7d4942233e5f778f8226f5e9", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_UBM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aed332676fe75417e82de862638622005", null ]

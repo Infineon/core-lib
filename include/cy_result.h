@@ -229,7 +229,7 @@ typedef enum
     CY_RSLT_MODULE_DRIVER_CTDAC = 0x0019,
     /** Module identifier for the eFuse driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_EFUSE = 0x001a,
-    /** Module identifier for the Emulated EEPROM driver. Asset(s): (emeeprom) */
+    /** Module identifier for the Emulated EEPROM driver. Asset(s): (em_eeprom) */
     CY_RSLT_MODULE_DRIVER_EM_EEPROM = 0x001b,
     /** Module identifier for the Profile driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_PROFILE = 0x001e,
@@ -318,6 +318,10 @@ typedef enum
     CY_RSLT_MODULE_ABSTRACTION_RESOURCE = 0x0182,
     /** Module identifier for RTOS abstraction. Asset(s): (abstraction-rtos) */
     CY_RSLT_MODULE_ABSTRACTION_OS = 0x0183,
+    /** Module identifier for Data Streaming abstraction. Asset(s): (data-streaming) */
+    CY_RSLT_MODULE_ABSTRACTION_DATA_STREAMING= 0x0184,
+    /** Module identifier for Block storage abstraction. Asset(s): (block-storage) */
+    CY_RSLT_MODULE_ABSTRACTION_BLOCK_STORAGE= 0x0185,
 
     /** Module identifier for the Retarget IO Board Library. Asset(s): (retarget-io) */
     CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO = 0x1A0,
@@ -405,7 +409,8 @@ typedef enum
     CY_RSLT_MODULE_MIDDLEWARE_HTTP_CLIENT = 0x20e,
     /** Module identifier for the Machine Learning(ML) library. Asset(s): (ml-middleware) */
     CY_RSLT_MODULE_MIDDLEWARE_ML = 0x20f,
-
+    /** Module identifier for the Emulated EEPROM Middleware Library. Asset(s): (emeeprom) */
+    CY_RSLT_MODULE_MIDDLEWARE_EM_EEPROM = 0x24f,
     /** Module identifier for the KV Store Middleware Library. Asset(s): (kv-store) */
     CY_RSLT_MODULE_MIDDLEWARE_KVSTORE = 0x250,
     /** Module identifier for the LIN Middleware Library. Asset(s): (lin) */
