@@ -103,6 +103,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_BOARD_HARDWARE_XENSIV_PASCO2", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ad7371dad534d9b98b9cdef2eb5ca9308", null ],
       [ "CY_RSLT_MODULE_BOARD_HARDWARE_XENSIV_BGT60TRXX", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a2b8851142c3acd0ca0300398c149281b", null ],
       [ "CY_RSLT_MODULE_BOARD_HARDWARE_LM49450", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aa0fc0957b382b4db7b1cbb3b00554fe1", null ],
+      [ "CY_RSLT_MODULE_BOARD_HARDWARE_TLV320DAC3100", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac756c5bddb610ef33354a9791c8baa09", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_MNDS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a6edb3d5f78ed597631a60671eaca638c", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_AWS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a9cfcba0d3677533910dd85d6c66076be", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_JSON", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0af3da701df88c97389963b230abd6f517", null ],
@@ -122,6 +123,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_MIDDLEWARE_EM_EEPROM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac819d5f89168aead93b2a6cfa008fc00", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a3e046d2c923cd2d31dc65dfd758e3214", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_LIN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab2647d2f7d4942233e5f778f8226f5e9", null ],
-      [ "CY_RSLT_MODULE_MIDDLEWARE_UBM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aed332676fe75417e82de862638622005", null ]
+      [ "CY_RSLT_MODULE_MIDDLEWARE_UBM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aed332676fe75417e82de862638622005", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE_CAT5", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a64aad563a29a1f1a8594389e9a0e31b2", null ]
     ] ]
 ];

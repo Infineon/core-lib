@@ -1,7 +1,10 @@
 var group__group__utils =
 [
     [ "CY_UNUSED_PARAMETER", "group__group__utils.html#ga0a73602e14d41b2d525a1185597c8445", null ],
+    [ "CY_ASSERT_HANDLER", "group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5", null ],
     [ "CY_ASSERT", "group__group__utils.html#gab333fce69ffe5eef183d190d37cc04db", null ],
+    [ "CY_ASSERT_AND_RETURN", "group__group__utils.html#gaa818442482e1820a57c6999be7d123a7", null ],
+    [ "CY_ASSERT_AND_RETURN_VOID", "group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd", null ],
     [ "CY_LO8", "group__group__utils.html#gaa7531a66d82ec4ab6c36a26579fedd3f", null ],
     [ "CY_HI8", "group__group__utils.html#gaa57842ae9ca46f0e4b6f280e8f4eaa6c", null ],
     [ "CY_LO16", "group__group__utils.html#ga58340d6e97870eff30ea323d7c529d3b", null ],

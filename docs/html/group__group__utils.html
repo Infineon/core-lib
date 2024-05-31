@@ -99,9 +99,18 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_UNUSED_PARAMETER</b>(x)&#160;&#160;&#160;( (void)(x) )</td></tr>
 <tr class="memdesc:ga0a73602e14d41b2d525a1185597c8445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple macro to suppress the unused parameter warning by casting to void. <br /></td></tr>
 <tr class="separator:ga0a73602e14d41b2d525a1185597c8445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8a1e3e0e2424cff7ad6ab53f6a183f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5">CY_ASSERT_HANDLER</a>()&#160;&#160;&#160;<a class="el" href="group__group__utils.html#ga80391b71fc1f6ec0a82d00866a168f38">CY_HALT</a>()</td></tr>
+<tr class="memdesc:gab8a1e3e0e2424cff7ad6ab53f6a183f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default assert handler.  <a href="group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5">More...</a><br /></td></tr>
+<tr class="separator:gab8a1e3e0e2424cff7ad6ab53f6a183f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab333fce69ffe5eef183d190d37cc04db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#gab333fce69ffe5eef183d190d37cc04db">CY_ASSERT</a>(x)</td></tr>
 <tr class="memdesc:gab333fce69ffe5eef183d190d37cc04db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility macro when neither NDEBUG or CY_NO_ASSERT is not declared to check a condition and, if false, trigger a breakpoint.  <a href="group__group__utils.html#gab333fce69ffe5eef183d190d37cc04db">More...</a><br /></td></tr>
 <tr class="separator:gab333fce69ffe5eef183d190d37cc04db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa818442482e1820a57c6999be7d123a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#gaa818442482e1820a57c6999be7d123a7">CY_ASSERT_AND_RETURN</a>(condition,  value)</td></tr>
+<tr class="memdesc:gaa818442482e1820a57c6999be7d123a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert an argument is true, else call assert handler and return a value.  <a href="group__group__utils.html#gaa818442482e1820a57c6999be7d123a7">More...</a><br /></td></tr>
+<tr class="separator:gaa818442482e1820a57c6999be7d123a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">CY_ASSERT_AND_RETURN_VOID</a>(condition)</td></tr>
+<tr class="memdesc:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert an argument is true, else call assert handler and return.  <a href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">More...</a><br /></td></tr>
+<tr class="separator:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7531a66d82ec4ab6c36a26579fedd3f"><td class="memItemLeft" align="right" valign="top"><a id="gaa7531a66d82ec4ab6c36a26579fedd3f" name="gaa7531a66d82ec4ab6c36a26579fedd3f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_LO8</b>(x)&#160;&#160;&#160;((uint8_t) ((x) &amp; 0xFFU))</td></tr>
 <tr class="memdesc:gaa7531a66d82ec4ab6c36a26579fedd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower 8 bits of a 16-bit value. <br /></td></tr>
@@ -211,6 +220,26 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CY_HALT</b> (v
 <tr class="separator:ga80391b71fc1f6ec0a82d00866a168f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gab8a1e3e0e2424cff7ad6ab53f6a183f5" name="gab8a1e3e0e2424cff7ad6ab53f6a183f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8a1e3e0e2424cff7ad6ab53f6a183f5">&#9670;&nbsp;</a></span>CY_ASSERT_HANDLER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_ASSERT_HANDLER</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__group__utils.html#ga80391b71fc1f6ec0a82d00866a168f38">CY_HALT</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default assert handler. </p>
+<p >To override, define CY_CUSTOM_ASSERT_HANDLER and define own CY_ASSERT_HANDLER API </p>
+
+</div>
+</div>
 <a id="gab333fce69ffe5eef183d190d37cc04db" name="gab333fce69ffe5eef183d190d37cc04db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab333fce69ffe5eef183d190d37cc04db">&#9670;&nbsp;</a></span>CY_ASSERT</h2>
 
@@ -226,14 +255,79 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CY_HALT</b> (v
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                <span class="keywordflow">do</span> {                \</div>
-<div class="line">                                if(!(x))        \</div>
-<div class="line">                                {               \</div>
-<div class="line">                                    CY_HALT();  \</div>
-<div class="line">                                }               \</div>
-<div class="line">                            } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
+<b>Value:</b><div class="fragment"><div class="line">                                <span class="keywordflow">do</span> {                        \</div>
+<div class="line">                                if(!(x))                \</div>
+<div class="line">                                {                       \</div>
+<div class="line">                                    CY_ASSERT_HANDLER();\</div>
+<div class="line">                                }                       \</div>
+<div class="line">                            } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
 <p>Utility macro when neither NDEBUG or CY_NO_ASSERT is not declared to check a condition and, if false, trigger a breakpoint. </p>
+<p >Assert an argument is true, else call assert handler </p>
+
+</div>
+</div>
+<a id="gaa818442482e1820a57c6999be7d123a7" name="gaa818442482e1820a57c6999be7d123a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa818442482e1820a57c6999be7d123a7">&#9670;&nbsp;</a></span>CY_ASSERT_AND_RETURN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_ASSERT_AND_RETURN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                            <span class="keywordflow">do</span> {                        \</div>
+<div class="line">                                if(!(condition))        \</div>
+<div class="line">                                {                       \</div>
+<div class="line">                                    CY_ASSERT_HANDLER();\</div>
+<div class="line">                                    return (value);     \</div>
+<div class="line">                                }                       \</div>
+<div class="line">                            } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p>Assert an argument is true, else call assert handler and return a value. </p>
+
+</div>
+</div>
+<a id="ga684f094e4e6c95a4bf84c9fb2bf4decd" name="ga684f094e4e6c95a4bf84c9fb2bf4decd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga684f094e4e6c95a4bf84c9fb2bf4decd">&#9670;&nbsp;</a></span>CY_ASSERT_AND_RETURN_VOID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_ASSERT_AND_RETURN_VOID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                            <span class="keywordflow">do</span> {                        \</div>
+<div class="line">                                if(!(condition))        \</div>
+<div class="line">                                {                       \</div>
+<div class="line">                                    CY_ASSERT_HANDLER();\</div>
+<div class="line">                                    return;             \</div>
+<div class="line">                                }                       \</div>
+<div class="line">                            } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p>Assert an argument is true, else call assert handler and return. </p>
 
 </div>
 </div>
@@ -276,7 +370,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>CY_HALT</b> (v
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                ((uint64_t) (((uint64_t) <a class="code hl_define" href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a>((uint32_t)(x)) &lt;&lt; 32U) | \</div>
 <div class="line">                                CY_SWAP_ENDIAN32((uint32_t)((x) &gt;&gt; 32U))))</div>
-<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:100</div></div>
+<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:141</div></div>
 </div><!-- fragment -->
 <p>Swap the byte ordering of a 64-bit value. </p>
 

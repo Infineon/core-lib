@@ -43,6 +43,9 @@ The Core Library provides basic types and utilities that can be used between dif
 
 ### What Changed?
 
+#### v1.4.2
+* Added new module identifiers to cy_result.h 
+* Added new utility MACROs to cy_utils.h. Custom ASSERT Handler can now be defined.
 #### v1.4.1
 * Added new module identifiers to cy_result.h
 #### v1.4.0
@@ -81,7 +84,7 @@ This version of the Core Library was validated for compatibility with the follow
 | :---                                      | :----:  |
 | ModusToolbox™ Software Environment        | 2.4.0   |
 | GCC Compiler                              | 10.3.1  |
-| IAR Compiler                              | 9.30.1  |
+| IAR Compiler                              | 9.40.2  |
 | ARM Compiler                              | 6.16    |
 
 Minimum required ModusToolbox™ Software Environment: v2.0

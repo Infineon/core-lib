@@ -300,7 +300,7 @@ typedef enum
     CY_RSLT_MODULE_DRIVER_PDM_PCM2 = 0x0073,
     /** Module identifier for the Crypto Lite driver. Asset(s): (mtb-pdl-cat1, mtb-pdl-cat2) */
     CY_RSLT_MODULE_DRIVER_CRYPTOLITE = 0x0074,
-    /** Module identifier for the SysFault driver. Asset(s): (mtb-pdl-cat1) */
+    /** Module identifier for the SysFault driver. Asset(s): (mtb-pdl-cat1, mtb-pdl-cat2) */
     CY_RSLT_MODULE_DRIVER_SYSFAULT = 0x0076,
     /** Module identifier for the LVD HT driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_LVD_HT = 0x0078,
@@ -374,6 +374,9 @@ typedef enum
     CY_RSLT_MODULE_BOARD_HARDWARE_XENSIV_BGT60TRXX = 0x01CC,
     /** Module identifier for the LM49450 Audio Codec Library. Asset(s): (audio-codec-lm49450) */
     CY_RSLT_MODULE_BOARD_HARDWARE_LM49450 = 0x01CE,
+    /** Module identifier for the TLV320DAC3100 Audio Codec Library.
+       Asset(s): (audio-codec-tlv320dac3100) */
+    CY_RSLT_MODULE_BOARD_HARDWARE_TLV320DAC3100 = 0x01CF,
 
     /** Module identifier for the MDNS library. Asset(s): (mdns) */
     CY_RSLT_MODULE_MIDDLEWARE_MNDS = 0x200,
@@ -416,7 +419,9 @@ typedef enum
     /** Module identifier for the LIN Middleware Library. Asset(s): (lin) */
     CY_RSLT_MODULE_MIDDLEWARE_LIN = 0x0251,
     /** Module identifier for the UBM Middleware Library. Asset(s): (ubm) */
-    CY_RSLT_MODULE_MIDDLEWARE_UBM = 0x0252
+    CY_RSLT_MODULE_MIDDLEWARE_UBM = 0x0252,
+    /** Module identifier for the KV Store CAT5 Middleware Library. Asset(s): (kv-store-cat5 ) */
+    CY_RSLT_MODULE_MIDDLEWARE_KVSTORE_CAT5 = 0x0253
 } cy_en_rslt_module_t;
 
 /** \} modules */
