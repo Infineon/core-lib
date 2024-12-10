@@ -1,6 +1,7 @@
 var group__group__utils =
 [
     [ "CY_UNUSED_PARAMETER", "group__group__utils.html#ga0a73602e14d41b2d525a1185597c8445", null ],
+    [ "CY_HALT", "group__group__utils.html#gad5bcf1928374c0433e7792c173bf7fd2", null ],
     [ "CY_ASSERT_HANDLER", "group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5", null ],
     [ "CY_ASSERT", "group__group__utils.html#gab333fce69ffe5eef183d190d37cc04db", null ],
     [ "CY_ASSERT_AND_RETURN", "group__group__utils.html#gaa818442482e1820a57c6999be7d123a7", null ],
@@ -32,6 +33,5 @@ var group__group__utils =
     [ "CY_SYSLIB_DIV_ROUNDUP", "group__group__utils.html#ga7b4264645556dd22feb8b877a283e2a2", null ],
     [ "cy_char8_t", "group__group__utils.html#gae697a4ada82def1cf266ce7ad7c8fdbd", null ],
     [ "cy_float32_t", "group__group__utils.html#ga20c5888c9b8f65b00bcb57c74d774823", null ],
-    [ "cy_float64_t", "group__group__utils.html#ga94dedc99abc3e2712686cbf960a1bb5c", null ],
-    [ "CY_HALT", "group__group__utils.html#ga80391b71fc1f6ec0a82d00866a168f38", null ]
+    [ "cy_float64_t", "group__group__utils.html#ga94dedc99abc3e2712686cbf960a1bb5c", null ]
 ];

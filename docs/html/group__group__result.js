@@ -50,9 +50,12 @@ var group__group__result =
       [ "CY_RSLT_MODULE_DRIVER_SMIF", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a1b61143b00f6d418f48c65ae5dbeb372", null ],
       [ "CY_RSLT_MODULE_DRIVER_TCPWM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a85e26dea0054c519c6653ec1a7368576", null ],
       [ "CY_RSLT_MODULE_DRIVER_PROT", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a053998d0385e4798bff5a9132672570d", null ],
+      [ "CY_RSLT_MODULE_DRIVER_HVSS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a67c448dcd31da8003b3943222315b10c", null ],
+      [ "CY_RSLT_MODULE_DRIVER_CRWDT", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a2b93583e6fbf57a8fc084c0edd120c28", null ],
       [ "CY_RSLT_MODULE_DRIVER_TRIGMUX", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0af3553a6bff542f1f609bfa43a8db1605", null ],
       [ "CY_RSLT_MODULE_DRIVER_WDT", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a7286bb3d479c492e1306abdef034c306", null ],
       [ "CY_RSLT_MODULE_DRIVER_MCWDT", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a4707f80546f2ef8b4a682473aa7eef80", null ],
+      [ "CY_RSLT_MODULE_DRIVER_LTC", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ad7e3aa90817fb029650bf9bdc47c25ec", null ],
       [ "CY_RSLT_MODULE_DRIVER_LIN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a5ec643ba77ca98917f462340665752b1", null ],
       [ "CY_RSLT_MODULE_DRIVER_LVD", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a6375955d6bd89a3f1587eb35edb8a13e", null ],
       [ "CY_RSLT_MODULE_DRIVER_SD_HOST", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aff3550164c9dee83bd9669beffa24876", null ],
@@ -84,6 +87,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_ABSTRACTION_BLOCK_STORAGE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab5376c551591900838661970cebec23f", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_RETARGET_IO", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0a03f3213be996966a0308e7afe9e409", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_RGB_LED", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a55d1a53e882ccd03bc3b1390842d4cc0", null ],
+      [ "CY_RSLT_MODULE_BOARD_LIB_SERIAL_MEMORY", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a1790547c55bc32d1d493e20b67b9c654", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_SERIAL_FLASH", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab8644287d23132c02ebde79677114ab7", null ],
       [ "CY_RSLT_MODULE_BOARD_LIB_WHD_INTEGRATION", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a507d16f0ee76e04fc6a97c7435d4392c", null ],
       [ "CY_RSLT_MODULE_BOARD_SHIELD_028_EPD", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a6aca04eb9ed85bf5513b075cae53538d", null ],
@@ -124,6 +128,9 @@ var group__group__result =
       [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a3e046d2c923cd2d31dc65dfd758e3214", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_LIN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab2647d2f7d4942233e5f778f8226f5e9", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_UBM", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aed332676fe75417e82de862638622005", null ],
-      [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE_CAT5", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a64aad563a29a1f1a8594389e9a0e31b2", null ]
+      [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE_CAT5", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a64aad563a29a1f1a8594389e9a0e31b2", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_MCDI", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a54641ea7392e7384b19df27009836ef1", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_PWRCONV", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0af67fbcae1e502cbfb6f59e200fd0d143", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a", null ]
     ] ]
 ];

@@ -2,38 +2,35 @@ var indexSectionsWithContent =
 {
   0: "_cru",
   1: "c",
-  2: "c",
-  3: "r",
+  2: "r",
+  3: "c",
   4: "c",
   5: "c",
-  6: "c",
-  7: "ru",
-  8: "c"
+  6: "ru",
+  7: "c"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "variables",
-  4: "typedefs",
-  5: "enums",
-  6: "enumvalues",
-  7: "groups",
-  8: "pages"
+  2: "variables",
+  3: "typedefs",
+  4: "enums",
+  5: "enumvalues",
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
   1: "Data Structures",
-  2: "Functions",
-  3: "Variables",
-  4: "Typedefs",
-  5: "Enumerations",
-  6: "Enumerator",
-  7: "Modules",
-  8: "Pages"
+  2: "Variables",
+  3: "Typedefs",
+  4: "Enumerations",
+  5: "Enumerator",
+  6: "Modules",
+  7: "Pages"
 };
 
