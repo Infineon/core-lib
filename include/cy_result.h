@@ -300,6 +300,10 @@ typedef enum
     CY_RSLT_MODULE_DRIVER_EVTGEN = 0x004a,
     /** Module identifier for the SAR v2 driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_SAR2 = 0x004b,
+    /** Module identifier for the delta-sigma ADC driver. Asset(s): (mtb-pdl-cat2) */
+    CY_RSLT_MODULE_DRIVER_DSADC = 0x0050,
+    /** Module identifier for the CAN2.0B driver. Asset(s): (mtb-pdl-cat2) */
+    CY_RSLT_MODULE_DRIVER_CAN2B = 0x0051,
     /** Module identifier for the Key Scan driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_KEYSCAN = 0x0072,
     /** Module identifier for the PDM-PCM v2 driver. Asset(s): (mtb-pdl-cat1) */
@@ -436,7 +440,9 @@ typedef enum
     /** Module identifier for the Power Conversion Middleware. Asset(s): (mtb-pwrconv) */
     CY_RSLT_MODULE_MIDDLEWARE_PWRCONV = 0x0255,
     /** Module identifier for the Async Transfer Utility Library. Asset(s): (async-transfer) */
-    CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER = 0x0256
+    CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER = 0x0256,
+    /** Module identifier for the MTB PMBus Middleware Library. Asset(s): (mtb-pmbus) */
+    CY_RSLT_MODULE_MIDDLEWARE_PMBUS = 0x025a
 } cy_en_rslt_module_t;
 
 /** \} modules */

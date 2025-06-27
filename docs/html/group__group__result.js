@@ -72,6 +72,8 @@ var group__group__result =
       [ "CY_RSLT_MODULE_DRIVER_MSCLP", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aed3dd57a9b76ec1b0f612d3beb2cb0df", null ],
       [ "CY_RSLT_MODULE_DRIVER_EVTGEN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac2fc66f31cf1775461fde206aa9cd19a", null ],
       [ "CY_RSLT_MODULE_DRIVER_SAR2", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a556f94e44063eedd35902918290b3e8b", null ],
+      [ "CY_RSLT_MODULE_DRIVER_DSADC", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0b33e680efd06ffa12c109a70ee184f3", null ],
+      [ "CY_RSLT_MODULE_DRIVER_CAN2B", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a1b8a6dcc775844139fa2bf0b47999e8e", null ],
       [ "CY_RSLT_MODULE_DRIVER_KEYSCAN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac3fe5c1390bd3da0a397af4f1fac8a96", null ],
       [ "CY_RSLT_MODULE_DRIVER_PDM_PCM2", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a8108e24a01c2130c03f018293573b30f", null ],
       [ "CY_RSLT_MODULE_DRIVER_CRYPTOLITE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab8047a8ce963ee7e66e98863a99b083e", null ],
@@ -131,6 +133,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_MIDDLEWARE_KVSTORE_CAT5", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a64aad563a29a1f1a8594389e9a0e31b2", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_MCDI", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a54641ea7392e7384b19df27009836ef1", null ],
       [ "CY_RSLT_MODULE_MIDDLEWARE_PWRCONV", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0af67fbcae1e502cbfb6f59e200fd0d143", null ],
-      [ "CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a", null ]
+      [ "CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a", null ],
+      [ "CY_RSLT_MODULE_MIDDLEWARE_PMBUS", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac80960b324e25a6f6eb31515ba5eca78", null ]
     ] ]
 ];
