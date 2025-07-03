@@ -168,7 +168,7 @@ void CY_ASSERT_HANDLER(void);
 #elif defined (__GNUC__)
     #if defined (__clang__)
         #define CY_NOINIT           __attribute__ ((section("__DATA, __noinit")))
-        #define CY_SECTION(name)    __attribute__ ((section("__DATA, "name)))
+        #define CY_SECTION(name)    __attribute__ ((section("__DATA, " name)))
         #define CY_RAMFUNC_BEGIN    __attribute__ ((section("__DATA, .cy_ramfunc")))
         #define CY_RAMFUNC_END
     #else
