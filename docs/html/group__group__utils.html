@@ -113,6 +113,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">CY_ASSERT_AND_RETURN_VOID</a>(condition)</td></tr>
 <tr class="memdesc:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert an argument is true, else call assert handler and return.  <a href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">More...</a><br /></td></tr>
 <tr class="separator:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c9310173ec05bd89771d31694aa47e6"><td class="memItemLeft" align="right" valign="top"><a id="ga2c9310173ec05bd89771d31694aa47e6" name="ga2c9310173ec05bd89771d31694aa47e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_SVC_CALL</b>()&#160;&#160;&#160;( asm(&quot;svc #0&quot;) )</td></tr>
+<tr class="memdesc:ga2c9310173ec05bd89771d31694aa47e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuperVisorCall macro. <br /></td></tr>
+<tr class="separator:ga2c9310173ec05bd89771d31694aa47e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7531a66d82ec4ab6c36a26579fedd3f"><td class="memItemLeft" align="right" valign="top"><a id="gaa7531a66d82ec4ab6c36a26579fedd3f" name="gaa7531a66d82ec4ab6c36a26579fedd3f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_LO8</b>(x)&#160;&#160;&#160;((uint8_t) ((x) &amp; 0xFFU))</td></tr>
 <tr class="memdesc:gaa7531a66d82ec4ab6c36a26579fedd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower 8 bits of a 16-bit value. <br /></td></tr>
@@ -387,7 +391,7 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                ((uint64_t) (((uint64_t) <a class="code hl_define" href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a>((uint32_t)(x)) &lt;&lt; 32U) | \</div>
 <div class="line">                                CY_SWAP_ENDIAN32((uint32_t)((x) &gt;&gt; 32U))))</div>
-<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:137</div></div>
+<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:139</div></div>
 </div><!-- fragment -->
 <p>Swap the byte ordering of a 64-bit value. </p>
 

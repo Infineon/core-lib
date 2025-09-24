@@ -43,11 +43,11 @@ The Core Library provides basic types and utilities that can be used between dif
 
 ### What Changed?
 
+#### v1.5.0
+* Added new module identifiers to cy_result.h
+* Added CY_RSLT_GET_EX_SUBMODULE and CY_RSLT_GET_EX_CODE macros for extracting extended result information.
 #### v1.4.4
-* Added new module identifiers to cy_result.h:
-    * CY_RSLT_MODULE_DRIVER_DSADC 
-    * CY_RSLT_MODULE_DRIVER_CAN2B
-    * CY_RSLT_MODULE_MIDDLEWARE_PMBUS
+* Added new module identifiers to cy_result.h
 #### v1.4.3
 * Added new module identifiers to cy_result.h
 * Updated CY_HALT to be an inline funtion
@@ -104,4 +104,4 @@ Use the following links for more information, as needed:
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2025.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2023.

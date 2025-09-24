@@ -106,16 +106,16 @@ $(document).ready(function(){initNavTree('group__group__result.html',''); initRe
 <div class="line">uint16_t error_code = <a class="code hl_define" href="group__group__result.html#ga5a7fc037210b7ff81c65160e11823443">CY_RSLT_GET_CODE</a>(result);</div>
 <div class="line"> </div>
 <div class="line">printf(<span class="stringliteral">&quot;type=%d, module=%d, code=%d\n&quot;</span>, type, module_id, error_code);</div>
-<div class="ttc" id="agroup__group__result_html_ga5a7fc037210b7ff81c65160e11823443"><div class="ttname"><a href="group__group__result.html#ga5a7fc037210b7ff81c65160e11823443">CY_RSLT_GET_CODE</a></div><div class="ttdeci">#define CY_RSLT_GET_CODE(x)</div><div class="ttdoc">Get the value of the result code field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:130</div></div>
-<div class="ttc" id="agroup__group__result_html_ga9ae9b152a38632a9e0f8620845c6cea9"><div class="ttname"><a href="group__group__result.html#ga9ae9b152a38632a9e0f8620845c6cea9">CY_RSLT_GET_TYPE</a></div><div class="ttdeci">#define CY_RSLT_GET_TYPE(x)</div><div class="ttdoc">Get the value of the result type field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:120</div></div>
-<div class="ttc" id="agroup__group__result_html_gab959fc67da8489c03d3ab631442393b4"><div class="ttname"><a href="group__group__result.html#gab959fc67da8489c03d3ab631442393b4">CY_RSLT_GET_MODULE</a></div><div class="ttdeci">#define CY_RSLT_GET_MODULE(x)</div><div class="ttdoc">Get the value of the module identifier field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:125</div></div>
-<div class="ttc" id="agroup__group__result_html_gaca79700fcc701534ce61778a9bcf57d1"><div class="ttname"><a href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a></div><div class="ttdeci">uint32_t cy_rslt_t</div><div class="ttdoc">Provides the result of an operation as a structured bitfield.</div><div class="ttdef"><b>Definition:</b> cy_result.h:459</div></div>
+<div class="ttc" id="agroup__group__result_html_ga5a7fc037210b7ff81c65160e11823443"><div class="ttname"><a href="group__group__result.html#ga5a7fc037210b7ff81c65160e11823443">CY_RSLT_GET_CODE</a></div><div class="ttdeci">#define CY_RSLT_GET_CODE(x)</div><div class="ttdoc">Get the value of the result code field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:134</div></div>
+<div class="ttc" id="agroup__group__result_html_ga9ae9b152a38632a9e0f8620845c6cea9"><div class="ttname"><a href="group__group__result.html#ga9ae9b152a38632a9e0f8620845c6cea9">CY_RSLT_GET_TYPE</a></div><div class="ttdeci">#define CY_RSLT_GET_TYPE(x)</div><div class="ttdoc">Get the value of the result type field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:124</div></div>
+<div class="ttc" id="agroup__group__result_html_gab959fc67da8489c03d3ab631442393b4"><div class="ttname"><a href="group__group__result.html#gab959fc67da8489c03d3ab631442393b4">CY_RSLT_GET_MODULE</a></div><div class="ttdeci">#define CY_RSLT_GET_MODULE(x)</div><div class="ttdoc">Get the value of the module identifier field.</div><div class="ttdef"><b>Definition:</b> cy_result.h:129</div></div>
+<div class="ttc" id="agroup__group__result_html_gaca79700fcc701534ce61778a9bcf57d1"><div class="ttname"><a href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a></div><div class="ttdeci">uint32_t cy_rslt_t</div><div class="ttdoc">Provides the result of an operation as a structured bitfield.</div><div class="ttdef"><b>Definition:</b> cy_result.h:483</div></div>
 </div><!-- fragment --><p >Using <a class="el" href="group__group__result.html#unioncy__rslt__decode__t">cy_rslt_decode_t</a> to decode: </p><div class="fragment"><div class="line"><a class="code hl_union" href="group__group__result.html#unioncy__rslt__decode__t">cy_rslt_decode_t</a> result;</div>
 <div class="line">result.<a class="code hl_variable" href="group__group__result.html#aa46cfbec8a99e1c9bce73b87f1f988c9">raw</a> = cy_hal_do_operation(arg);</div>
 <div class="line"> </div>
 <div class="line">printf(<span class="stringliteral">&quot;type=%d, module=%d, code=%d\n&quot;</span>, result.type, result.module, result.code);</div>
-<div class="ttc" id="agroup__group__result_html_aa46cfbec8a99e1c9bce73b87f1f988c9"><div class="ttname"><a href="group__group__result.html#aa46cfbec8a99e1c9bce73b87f1f988c9">cy_rslt_decode_t::raw</a></div><div class="ttdeci">cy_rslt_t raw</div><div class="ttdoc">The raw uint32/cy_rslt_t value.</div><div class="ttdef"><b>Definition:</b> cy_result.h:475</div></div>
-<div class="ttc" id="agroup__group__result_html_unioncy__rslt__decode__t"><div class="ttname"><a href="group__group__result.html#unioncy__rslt__decode__t">cy_rslt_decode_t</a></div><div class="ttdoc">Provides the result of an operation as a structured bitfield.</div><div class="ttdef"><b>Definition:</b> cy_result.h:474</div></div>
+<div class="ttc" id="agroup__group__result_html_aa46cfbec8a99e1c9bce73b87f1f988c9"><div class="ttname"><a href="group__group__result.html#aa46cfbec8a99e1c9bce73b87f1f988c9">cy_rslt_decode_t::raw</a></div><div class="ttdeci">cy_rslt_t raw</div><div class="ttdoc">The raw uint32/cy_rslt_t value.</div><div class="ttdef"><b>Definition:</b> cy_result.h:499</div></div>
+<div class="ttc" id="agroup__group__result_html_unioncy__rslt__decode__t"><div class="ttname"><a href="group__group__result.html#unioncy__rslt__decode__t">cy_rslt_decode_t</a></div><div class="ttdoc">Provides the result of an operation as a structured bitfield.</div><div class="ttdef"><b>Definition:</b> cy_result.h:498</div></div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -280,6 +280,8 @@ Typedefs</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aa3a4adf999fe96df83914f3d20ce996b">CY_RSLT_MODULE_DRIVER_WHD</a> = 0x0080
 , <br />
+&#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aa918989908db028e96f89736df8cb736">CY_RSLT_MODULE_DRIVER_BTHCI</a> = 0x0081
+, <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a79b500d6463aadd493b3812f779f75df">CY_RSLT_MODULE_ABSTRACTION_HAL</a> = 0x0100
 , <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a34ed95d409395cf119a792f89c9967ab">CY_RSLT_MODULE_ABSTRACTION_BSP</a> = 0x0180
@@ -388,6 +390,12 @@ Typedefs</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a">CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER</a> = 0x0256
 , <br />
+&#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ae720c840296c9a7bf97e721ef7c13f69">CY_RSLT_MODULE_MIDDLEWARE_IPC</a> = 0x0257
+, <br />
+&#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0abc2a0632ca12e2ebd82d3b0a4326a451">CY_RSLT_MODULE_MIDDLEWARE_AFX</a> = 0x0258
+, <br />
+&#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a5d8e414ca6181903c3211561c9516585">CY_RSLT_MODULE_MIDDLEWARE_SRF</a> = 0x0259
+, <br />
 &#160;&#160;<a class="el" href="group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac80960b324e25a6f6eb31515ba5eca78">CY_RSLT_MODULE_MIDDLEWARE_PMBUS</a> = 0x025a
 <br />
  }</td></tr>
@@ -410,6 +418,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga5a7fc037210b7ff81c65160e11823443"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__result.html#ga5a7fc037210b7ff81c65160e11823443">CY_RSLT_GET_CODE</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; CY_RSLT_CODE_POSITION) &amp; CY_RSLT_CODE_MASK)</td></tr>
 <tr class="memdesc:ga5a7fc037210b7ff81c65160e11823443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the result code field.  <a href="group__group__result.html#ga5a7fc037210b7ff81c65160e11823443">More...</a><br /></td></tr>
 <tr class="separator:ga5a7fc037210b7ff81c65160e11823443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86d56e4bdc8e395a1af7a8b088e78d88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__result.html#ga86d56e4bdc8e395a1af7a8b088e78d88">CY_RSLT_GET_EX_SUBMODULE</a>(x)&#160;&#160;&#160;    (((x) &gt;&gt; CY_RSLT_SUBMODULE_POSITION) &amp; CY_RSLT_SUBMODULE_MASK)</td></tr>
+<tr class="memdesc:ga86d56e4bdc8e395a1af7a8b088e78d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the result submodule field.  <a href="group__group__result.html#ga86d56e4bdc8e395a1af7a8b088e78d88">More...</a><br /></td></tr>
+<tr class="separator:ga86d56e4bdc8e395a1af7a8b088e78d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac09af3670f5180551b555ff8da5c8dc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__result.html#gac09af3670f5180551b555ff8da5c8dc8">CY_RSLT_GET_EX_CODE</a>(x)&#160;&#160;&#160;((x) &amp; CY_RSLT_CODE_MASK_EX)</td></tr>
+<tr class="memdesc:gac09af3670f5180551b555ff8da5c8dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the result code field, when the result contains a submodule.  <a href="group__group__result.html#gac09af3670f5180551b555ff8da5c8dc8">More...</a><br /></td></tr>
+<tr class="separator:gac09af3670f5180551b555ff8da5c8dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="unioncy__rslt__decode__t" id="unioncy__rslt__decode__t"></a>
@@ -546,6 +560,58 @@ The 14bit module id. </td></tr>
 </div><div class="memdoc">
 
 <p>Get the value of the result code field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>the <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value from which to extract the result code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga86d56e4bdc8e395a1af7a8b088e78d88" name="ga86d56e4bdc8e395a1af7a8b088e78d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86d56e4bdc8e395a1af7a8b088e78d88">&#9670;&nbsp;</a></span>CY_RSLT_GET_EX_SUBMODULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_RSLT_GET_EX_SUBMODULE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;    (((x) &gt;&gt; CY_RSLT_SUBMODULE_POSITION) &amp; CY_RSLT_SUBMODULE_MASK)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the result submodule field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>the <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value from which to extract the result code </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac09af3670f5180551b555ff8da5c8dc8" name="gac09af3670f5180551b555ff8da5c8dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac09af3670f5180551b555ff8da5c8dc8">&#9670;&nbsp;</a></span>CY_RSLT_GET_EX_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_RSLT_GET_EX_CODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x) &amp; CY_RSLT_CODE_MASK_EX)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of the result code field, when the result contains a submodule. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>the <a class="el" href="group__group__result.html#gaca79700fcc701534ce61778a9bcf57d1">cy_rslt_t</a> value from which to extract the result code </td></tr>
@@ -889,6 +955,9 @@ The 14bit module id. </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0aa3a4adf999fe96df83914f3d20ce996b" name="gga9008565cba0207520330a1cb8509a8d0aa3a4adf999fe96df83914f3d20ce996b"></a>CY_RSLT_MODULE_DRIVER_WHD&#160;</td><td class="fielddoc"><p >Module identifier for the WiFi Host Driver. </p>
 <p >Asset(s): (wifi-host-driver) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0aa918989908db028e96f89736df8cb736" name="gga9008565cba0207520330a1cb8509a8d0aa918989908db028e96f89736df8cb736"></a>CY_RSLT_MODULE_DRIVER_BTHCI&#160;</td><td class="fielddoc"><p >Module identifier for the BTSS HCI Driver. </p>
+<p >Asset(s): (mtb-cpuss-bthci) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a79b500d6463aadd493b3812f779f75df" name="gga9008565cba0207520330a1cb8509a8d0a79b500d6463aadd493b3812f779f75df"></a>CY_RSLT_MODULE_ABSTRACTION_HAL&#160;</td><td class="fielddoc"><p >Module identifier for the Hardware Abstraction Layer. </p>
 <p >Asset(s): (mtb-hal-cat1, mtb-hal-cat2, ...) </p>
 </td></tr>
@@ -1049,6 +1118,15 @@ The 14bit module id. </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a" name="gga9008565cba0207520330a1cb8509a8d0aefc58a4e4e2f1503a394ce1c3691474a"></a>CY_RSLT_MODULE_MIDDLEWARE_ASYNC_TRANSFER&#160;</td><td class="fielddoc"><p >Module identifier for the Async Transfer Utility Library. </p>
 <p >Asset(s): (async-transfer) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0ae720c840296c9a7bf97e721ef7c13f69" name="gga9008565cba0207520330a1cb8509a8d0ae720c840296c9a7bf97e721ef7c13f69"></a>CY_RSLT_MODULE_MIDDLEWARE_IPC&#160;</td><td class="fielddoc"><p >Module identifier for the MTB IPC Utility Library. </p>
+<p >Asset(s): (mtb-ipc) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0abc2a0632ca12e2ebd82d3b0a4326a451" name="gga9008565cba0207520330a1cb8509a8d0abc2a0632ca12e2ebd82d3b0a4326a451"></a>CY_RSLT_MODULE_MIDDLEWARE_AFX&#160;</td><td class="fielddoc"><p >Module identifier for the MTB AFX Library. </p>
+<p >Asset(s): (afx) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0a5d8e414ca6181903c3211561c9516585" name="gga9008565cba0207520330a1cb8509a8d0a5d8e414ca6181903c3211561c9516585"></a>CY_RSLT_MODULE_MIDDLEWARE_SRF&#160;</td><td class="fielddoc"><p >Module identifier for the MTB Secure Request Framework. </p>
+<p >Asset(s): (mtb-srf) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga9008565cba0207520330a1cb8509a8d0ac80960b324e25a6f6eb31515ba5eca78" name="gga9008565cba0207520330a1cb8509a8d0ac80960b324e25a6f6eb31515ba5eca78"></a>CY_RSLT_MODULE_MIDDLEWARE_PMBUS&#160;</td><td class="fielddoc"><p >Module identifier for the MTB PMBus Middleware Library. </p>
 <p >Asset(s): (mtb-pmbus) </p>
