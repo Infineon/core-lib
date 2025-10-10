@@ -76,6 +76,7 @@ var group__group__result =
       [ "CY_RSLT_MODULE_DRIVER_SAR2", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a556f94e44063eedd35902918290b3e8b", null ],
       [ "CY_RSLT_MODULE_DRIVER_DSADC", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0b33e680efd06ffa12c109a70ee184f3", null ],
       [ "CY_RSLT_MODULE_DRIVER_CAN2B", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a1b8a6dcc775844139fa2bf0b47999e8e", null ],
+      [ "CY_RSLT_MODULE_DRIVER_ISOUART", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a0be0a3224c3a676d0244de7d8c794b3b", null ],
       [ "CY_RSLT_MODULE_DRIVER_KEYSCAN", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ac3fe5c1390bd3da0a397af4f1fac8a96", null ],
       [ "CY_RSLT_MODULE_DRIVER_PDM_PCM2", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0a8108e24a01c2130c03f018293573b30f", null ],
       [ "CY_RSLT_MODULE_DRIVER_CRYPTOLITE", "group__group__result.html#gga9008565cba0207520330a1cb8509a8d0ab8047a8ce963ee7e66e98863a99b083e", null ],

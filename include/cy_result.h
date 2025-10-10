@@ -320,6 +320,8 @@ typedef enum
     CY_RSLT_MODULE_DRIVER_DSADC = 0x0050,
     /** Module identifier for the CAN2.0B driver. Asset(s): (mtb-pdl-cat2) */
     CY_RSLT_MODULE_DRIVER_CAN2B = 0x0051,
+    /** Module identifier for the ISOUART driver. Asset(s): (mtb-pdl-cat2) */
+    CY_RSLT_MODULE_DRIVER_ISOUART = 0x0052,
     /** Module identifier for the Key Scan driver. Asset(s): (mtb-pdl-cat1) */
     CY_RSLT_MODULE_DRIVER_KEYSCAN = 0x0072,
     /** Module identifier for the PDM-PCM v2 driver. Asset(s): (mtb-pdl-cat1) */
