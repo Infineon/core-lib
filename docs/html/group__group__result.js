@@ -14,6 +14,7 @@ var group__group__result =
     [ "CY_RSLT_GET_EX_SUBMODULE", "group__group__result.html#ga86d56e4bdc8e395a1af7a8b088e78d88", null ],
     [ "CY_RSLT_GET_EX_CODE", "group__group__result.html#gac09af3670f5180551b555ff8da5c8dc8", null ],
     [ "CY_RSLT_MODULE_DRIVERS_PDL_BASE", "group__group__result.html#gaf229ad57884c3c8e4c5ecc7f217ce8aa", null ],
+    [ "CY_RSLT_MODULE_USER_BASE", "group__group__result.html#ga2117e074a2bae7fd05d3489eaf4bbbf9", null ],
     [ "CY_RSLT_SUCCESS", "group__group__result.html#gaf58fac450d9fff4472f03ad68f6e546e", null ],
     [ "CY_RSLT_CREATE", "group__group__result.html#ga711a53e03635b4f3e21c41aaf9459251", null ],
     [ "CY_RSLT_CREATE_EX", "group__group__result.html#ga7b3e119b13a8bb398f429a22d8cf4dcd", null ],

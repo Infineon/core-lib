@@ -29,6 +29,7 @@ var group__group__utils =
     [ "_CLR_SET_FLD8U", "group__group__utils.html#ga5e3bafb985f38613bde1147dc73fcf65", null ],
     [ "CY_REG8_CLR_SET", "group__group__utils.html#gac927ea147352133e7a1ead8913247d90", null ],
     [ "_BOOL2FLD", "group__group__utils.html#ga935b8fbcfd877d03f234825f296e7ac9", null ],
+    [ "_BOOL2UINT", "group__group__utils.html#gadba587cd0539e6e06db4d5634e7cbd2e", null ],
     [ "_FLD2BOOL", "group__group__utils.html#ga8d9ee76c64031ffe440b12e55bf6947d", null ],
     [ "CY_SYSLIB_DIV_ROUND", "group__group__utils.html#ga05f244da002bc0c7dc9c1475053f8cfd", null ],
     [ "CY_SYSLIB_DIV_ROUNDUP", "group__group__utils.html#ga7b4264645556dd22feb8b877a283e2a2", null ],

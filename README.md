@@ -33,6 +33,7 @@ The Core Library provides basic types and utilities that can be used between dif
     * `_CLR_SET_FLD8U`: The macro for setting a 8-bit register with a name field and value for providing get-clear-modify-write operations
     * `CY_REG8_CLR_SET`: Uses _CLR_SET_FLD8U macro for providing get-clear-modify-write operations with a name field and value and writes a resulting value to the 8-bit register
     * `_BOOL2FLD`: Returns a field mask if the value is not false
+    * `_BOOL2UINT`: Returns 1, if the value is not false
     * `_FLD2BOOL`: Returns true, if the value includes the field mask
     * `CY_SYSLIB_DIV_ROUND`: Calculates a / b with rounding to the nearest integer, a and b must have the same sign.
     * `CY_SYSLIB_DIV_ROUNDUP`: Calculates a / b with rounding up if remainder != 0, both a and b must be positive.
@@ -52,4 +53,4 @@ The Core Library provides basic types and utilities that can be used between dif
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2025.
+© Copyright 2019-2025 Infineon Technologies Apache2.

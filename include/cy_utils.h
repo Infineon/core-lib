@@ -6,8 +6,17 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2022 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation
+ * (c) 2018-2025, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
+ * This software, associated documentation and materials ("Software") is
+ * owned by Infineon Technologies AG or one of its affiliates ("Infineon")
+ * and is protected by and subject to worldwide patent protection, worldwide
+ * copyright laws, and international treaty provisions. Therefore, you may use
+ * this Software only as provided in the license agreement accompanying the
+ * software package from which you obtained this Software. If no license
+ * agreement applies, then any use, reproduction, modification, translation, or
+ * compilation of this Software is prohibited without the express written
+ * permission of Infineon.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -22,6 +31,22 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Disclaimer: UNLESS OTHERWISE EXPRESSLY AGREED WITH INFINEON, THIS SOFTWARE
+ * IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES OF NON-INFRINGEMENT OF
+ * THIRD-PARTY RIGHTS AND IMPLIED WARRANTIES SUCH AS WARRANTIES OF FITNESS FOR A
+ * SPECIFIC USE/PURPOSE OR MERCHANTABILITY.
+ * Infineon reserves the right to make changes to the Software without notice.
+ * You are responsible for properly designing, programming, and testing the
+ * functionality and safety of your intended application of the Software, as
+ * well as complying with any legal requirements related to its use. Infineon
+ * does not guarantee that the Software will be free from intrusion, data theft
+ * or loss, or other breaches ("Security Breaches"), and Infineon shall have
+ * no liability arising out of any Security Breaches. Unless otherwise
+ * explicitly approved by Infineon, the Software may not be used in any
+ * application where a failure of the Product or any consequences of the use
+ * thereof can reasonably be expected to result in personal injury.
  **************************************************************************************************/
 
 /**
@@ -61,7 +86,11 @@ typedef double cy_float64_t; /**< Specific-length typedef for the basic numerica
 
 /** Default assert handler.
  *
- * To override, define CY_CUSTOM_ASSERT_HANDLER and define own CY_ASSERT_HANDLER API
+ * To override default assert handler and use own assert handler
+ * 1. Add CY_CUSTOM_ASSERT_HANDLER to Makefile DEFINES
+ *    \code DEFINES += CY_CUSTOM_ASSERT_HANDLER \endcode
+ * 2. Define own CY_ASSERT_HANDLER API
+ *    \snippet snippets/main.c CUSTOM_ASSERT_HANDLER
  */
 #if defined(CY_CUSTOM_ASSERT_HANDLER)
 void CY_ASSERT_HANDLER(void);
@@ -116,7 +145,9 @@ void CY_ASSERT_HANDLER(void);
 #endif // defined(NDEBUG)
 
 /** SuperVisorCall macro */
-#define CY_SVC_CALL()        ( asm("svc #0") )
+#define CY_SVC_CALL()   do {                            \
+                            __asm("svc #0");            \
+                        } while(false)
 
 /*******************************************************************************
 *  Data manipulation defines
@@ -302,7 +333,7 @@ void CY_ASSERT_HANDLER(void);
         (*((volatile uint8_t *) (addr) + 1)) = (uint8_t)((value) >> 8U);    \
         (*((volatile uint8_t *) (addr) + 2)) = (uint8_t)((value) >> 16U);   \
     }   \
-    while(0)
+    while(false)
 
 
 /***************************************************************************************************
@@ -420,6 +451,15 @@ void CY_ASSERT_HANDLER(void);
  **************************************************************************************************/
 #define _BOOL2FLD(field, value) (((value) != false) ? (field ## _Msk) : 0UL)
 
+/***************************************************************************************************
+ * Macro Name: _BOOL2UINT
+ ***********************************************************************************************//**
+ *
+ *  Returns 1, if the value is not false.
+ *  Returns 0, if the value is false.
+ *
+ **************************************************************************************************/
+#define _BOOL2UINT(value) ((value) ? 1UL : 0UL)
 
 /***************************************************************************************************
  * Macro Name: _FLD2BOOL

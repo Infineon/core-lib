@@ -8,8 +8,17 @@
  *
  ***************************************************************************************************
  * \copyright
- * Copyright 2018-2025 Cypress Semiconductor Corporation (an Infineon company) or
- * an affiliate of Cypress Semiconductor Corporation
+ * (c) 2018-2025, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
+ * This software, associated documentation and materials ("Software") is
+ * owned by Infineon Technologies AG or one of its affiliates ("Infineon")
+ * and is protected by and subject to worldwide patent protection, worldwide
+ * copyright laws, and international treaty provisions. Therefore, you may use
+ * this Software only as provided in the license agreement accompanying the
+ * software package from which you obtained this Software. If no license
+ * agreement applies, then any use, reproduction, modification, translation, or
+ * compilation of this Software is prohibited without the express written
+ * permission of Infineon.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -24,6 +33,22 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Disclaimer: UNLESS OTHERWISE EXPRESSLY AGREED WITH INFINEON, THIS SOFTWARE
+ * IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES OF NON-INFRINGEMENT OF
+ * THIRD-PARTY RIGHTS AND IMPLIED WARRANTIES SUCH AS WARRANTIES OF FITNESS FOR A
+ * SPECIFIC USE/PURPOSE OR MERCHANTABILITY.
+ * Infineon reserves the right to make changes to the Software without notice.
+ * You are responsible for properly designing, programming, and testing the
+ * functionality and safety of your intended application of the Software, as
+ * well as complying with any legal requirements related to its use. Infineon
+ * does not guarantee that the Software will be free from intrusion, data theft
+ * or loss, or other breaches ("Security Breaches"), and Infineon shall have
+ * no liability arising out of any Security Breaches. Unless otherwise
+ * explicitly approved by Infineon, the Software may not be used in any
+ * application where a failure of the Product or any consequences of the use
+ * thereof can reasonably be expected to result in personal injury.
  **************************************************************************************************/
 
 /**
@@ -178,10 +203,12 @@ typedef enum
  * Defines codes to identify the module from which an error originated.
  * For some large libraries, a range of module codes is defined here;
  * see the library documentation for values corresponding to individual modules.
- * Valid range is 0x0000-0x4000.
+ * Valid range is 0x0000-0x4000. These range contains:
+ * 0x0000-0x1FFF is reserved for Infineon developed firmware.
+ * 0x2000-0x3FFF is reserved for users purposes.
  */
 
-/** Base module identifier for peripheral driver library drivers (0x0000 - 0x007F) */
+/** Base module identifier for peripheral driver library drivers (0x0000 - 0x1FFF) */
 #define CY_RSLT_MODULE_DRIVERS_PDL_BASE             (0x0000U)
 /** \cond INTERNAL */
 /** Deprecated. Base module identifier for wireless host driver library modules (0x0080 - 0x00FF) */
@@ -199,7 +226,8 @@ typedef enum
 /** Deprecated. Base identifier for environment abstraction modules (0x0184 - 0x019F) */
 #define CY_RSLT_MODULE_ABSTRACTION_ENV              (0x0184U)
 /** \endcond */
-
+/** Base module identifier for the user owned result code space (0x2000 - 0x3FFF) */
+#define CY_RSLT_MODULE_USER_BASE                    (0x2000U)
 
 /**
  * Define codes to identify the module from which an error originated.

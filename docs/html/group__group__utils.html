@@ -113,9 +113,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">CY_ASSERT_AND_RETURN_VOID</a>(condition)</td></tr>
 <tr class="memdesc:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assert an argument is true, else call assert handler and return.  <a href="group__group__utils.html#ga684f094e4e6c95a4bf84c9fb2bf4decd">More...</a><br /></td></tr>
 <tr class="separator:ga684f094e4e6c95a4bf84c9fb2bf4decd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c9310173ec05bd89771d31694aa47e6"><td class="memItemLeft" align="right" valign="top"><a id="ga2c9310173ec05bd89771d31694aa47e6" name="ga2c9310173ec05bd89771d31694aa47e6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_SVC_CALL</b>()&#160;&#160;&#160;( asm(&quot;svc #0&quot;) )</td></tr>
-<tr class="memdesc:ga2c9310173ec05bd89771d31694aa47e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuperVisorCall macro. <br /></td></tr>
+<tr class="memitem:ga2c9310173ec05bd89771d31694aa47e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga2c9310173ec05bd89771d31694aa47e6">CY_SVC_CALL</a>()</td></tr>
+<tr class="memdesc:ga2c9310173ec05bd89771d31694aa47e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SuperVisorCall macro.  <a href="group__group__utils.html#ga2c9310173ec05bd89771d31694aa47e6">More...</a><br /></td></tr>
 <tr class="separator:ga2c9310173ec05bd89771d31694aa47e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7531a66d82ec4ab6c36a26579fedd3f"><td class="memItemLeft" align="right" valign="top"><a id="gaa7531a66d82ec4ab6c36a26579fedd3f" name="gaa7531a66d82ec4ab6c36a26579fedd3f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CY_LO8</b>(x)&#160;&#160;&#160;((uint8_t) ((x) &amp; 0xFFU))</td></tr>
@@ -191,6 +190,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga935b8fbcfd877d03f234825f296e7ac9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga935b8fbcfd877d03f234825f296e7ac9">_BOOL2FLD</a>(field,  value)&#160;&#160;&#160;(((value) != false) ? (field ## _Msk) : 0UL)</td></tr>
 <tr class="memdesc:ga935b8fbcfd877d03f234825f296e7ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a field mask if the value is not false.  <a href="group__group__utils.html#ga935b8fbcfd877d03f234825f296e7ac9">More...</a><br /></td></tr>
 <tr class="separator:ga935b8fbcfd877d03f234825f296e7ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadba587cd0539e6e06db4d5634e7cbd2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#gadba587cd0539e6e06db4d5634e7cbd2e">_BOOL2UINT</a>(value)&#160;&#160;&#160;((value) ? 1UL : 0UL)</td></tr>
+<tr class="memdesc:gadba587cd0539e6e06db4d5634e7cbd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 1, if the value is not false.  <a href="group__group__utils.html#gadba587cd0539e6e06db4d5634e7cbd2e">More...</a><br /></td></tr>
+<tr class="separator:gadba587cd0539e6e06db4d5634e7cbd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d9ee76c64031ffe440b12e55bf6947d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__utils.html#ga8d9ee76c64031ffe440b12e55bf6947d">_FLD2BOOL</a>(field,  value)&#160;&#160;&#160;(((value) &amp; (field ## _Msk)) != 0UL)</td></tr>
 <tr class="memdesc:ga8d9ee76c64031ffe440b12e55bf6947d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the value includes the field mask.  <a href="group__group__utils.html#ga8d9ee76c64031ffe440b12e55bf6947d">More...</a><br /></td></tr>
 <tr class="separator:ga8d9ee76c64031ffe440b12e55bf6947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +259,15 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 </div><div class="memdoc">
 
 <p>Default assert handler. </p>
-<p >To override, define CY_CUSTOM_ASSERT_HANDLER and define own CY_ASSERT_HANDLER API </p>
+<p >To override default assert handler and use own assert handler</p><ol type="1">
+<li>Add CY_CUSTOM_ASSERT_HANDLER to Makefile DEFINES <div class="fragment"><div class="line">DEFINES += CY_CUSTOM_ASSERT_HANDLER </div>
+</div><!-- fragment --></li>
+<li>Define own CY_ASSERT_HANDLER API <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_define" href="group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5">CY_ASSERT_HANDLER</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line">    <span class="comment">/* Users code for custom assert handler */</span></div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__group__utils_html_gab8a1e3e0e2424cff7ad6ab53f6a183f5"><div class="ttname"><a href="group__group__utils.html#gab8a1e3e0e2424cff7ad6ab53f6a183f5">CY_ASSERT_HANDLER</a></div><div class="ttdeci">#define CY_ASSERT_HANDLER()</div><div class="ttdoc">Default assert handler.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:98</div></div>
+</div><!-- fragment --> </li>
+</ol>
 
 </div>
 </div>
@@ -352,6 +362,28 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 
 </div>
 </div>
+<a id="ga2c9310173ec05bd89771d31694aa47e6" name="ga2c9310173ec05bd89771d31694aa47e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c9310173ec05bd89771d31694aa47e6">&#9670;&nbsp;</a></span>CY_SVC_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CY_SVC_CALL</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                            <span class="keywordflow">do</span> {                            \</div>
+<div class="line">                            __asm(<span class="stringliteral">&quot;svc #0&quot;</span>);            \</div>
+<div class="line">                        } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+<p>SuperVisorCall macro. </p>
+
+</div>
+</div>
 <a id="ga97584523775e03eb4b9443b2c6db1ca9" name="ga97584523775e03eb4b9443b2c6db1ca9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga97584523775e03eb4b9443b2c6db1ca9">&#9670;&nbsp;</a></span>CY_SWAP_ENDIAN32</h2>
 
@@ -391,7 +423,7 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                ((uint64_t) (((uint64_t) <a class="code hl_define" href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a>((uint32_t)(x)) &lt;&lt; 32U) | \</div>
 <div class="line">                                CY_SWAP_ENDIAN32((uint32_t)((x) &gt;&gt; 32U))))</div>
-<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:139</div></div>
+<div class="ttc" id="agroup__group__utils_html_ga97584523775e03eb4b9443b2c6db1ca9"><div class="ttname"><a href="group__group__utils.html#ga97584523775e03eb4b9443b2c6db1ca9">CY_SWAP_ENDIAN32</a></div><div class="ttdeci">#define CY_SWAP_ENDIAN32(x)</div><div class="ttdoc">Swap the byte ordering of a 32-bit value.</div><div class="ttdef"><b>Definition:</b> cy_utils.h:170</div></div>
 </div><!-- fragment -->
 <p>Swap the byte ordering of a 64-bit value. </p>
 
@@ -588,7 +620,7 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 <div class="line">        (*((<span class="keyword">volatile</span> uint8_t *) (addr) + 1)) = (uint8_t)((value) &gt;&gt; 8U);    \</div>
 <div class="line">        (*((<span class="keyword">volatile</span> uint8_t *) (addr) + 2)) = (uint8_t)((value) &gt;&gt; 16U);   \</div>
 <div class="line">    }   \</div>
-<div class="line">    while(0)</div>
+<div class="line">    while(<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
 <p>Writes the 24-bit value to the specified address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -805,6 +837,27 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>cy_float64_
 </div><div class="memdoc">
 
 <p>Returns a field mask if the value is not false. </p>
+<p >Returns 0, if the value is false. </p>
+
+</div>
+</div>
+<a id="gadba587cd0539e6e06db4d5634e7cbd2e" name="gadba587cd0539e6e06db4d5634e7cbd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadba587cd0539e6e06db4d5634e7cbd2e">&#9670;&nbsp;</a></span>_BOOL2UINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _BOOL2UINT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value) ? 1UL : 0UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns 1, if the value is not false. </p>
 <p >Returns 0, if the value is false. </p>
 
 </div>
