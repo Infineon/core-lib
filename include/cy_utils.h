@@ -6,7 +6,7 @@
  *
  ***************************************************************************************************
  * \copyright
- * (c) 2018-2025, Infineon Technologies AG, or an affiliate of Infineon
+ * (c) 2019-2026, Infineon Technologies AG, or an affiliate of Infineon
  * Technologies AG. All rights reserved.
  * This software, associated documentation and materials ("Software") is
  * owned by Infineon Technologies AG or one of its affiliates ("Infineon")
@@ -51,7 +51,6 @@
 
 /**
  * \addtogroup group_utils Utilities
- * \ingroup group_abstraction
  * \{
  * Basic utility types, macros and functions.
  */
@@ -90,7 +89,12 @@ typedef double cy_float64_t; /**< Specific-length typedef for the basic numerica
  * 1. Add CY_CUSTOM_ASSERT_HANDLER to Makefile DEFINES
  *    \code DEFINES += CY_CUSTOM_ASSERT_HANDLER \endcode
  * 2. Define own CY_ASSERT_HANDLER API
- *    \snippet snippets/main.c CUSTOM_ASSERT_HANDLER
+ *    \code
+ *    void CY_ASSERT_HANDLER(void)
+ *    {
+ *        // Users code for custom assert handler
+ *    }
+ *    \endcode
  */
 #if defined(CY_CUSTOM_ASSERT_HANDLER)
 void CY_ASSERT_HANDLER(void);

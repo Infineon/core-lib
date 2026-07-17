@@ -25,10 +25,8 @@
 var NAVTREE =
 [
   [ "Core Library", "index.html", [
-    [ "Overview", "index.html#autotoc_md1", null ],
-    [ "Features", "index.html#autotoc_md2", null ],
-    [ "More information", "index.html#autotoc_md3", null ],
-    [ "API Reference", "modules.html", "modules" ]
+    [ "Core Library - Basic Types and Utilities for ModusToolbox", "index.html", "index" ],
+    [ "API Reference", "topics.html", "topics" ]
   ] ]
 ];
 
@@ -37,5 +35,6 @@ var NAVTREEINDEX =
 "group__group__result.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

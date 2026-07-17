@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "_cru",
+  0: "_abcdfilmnortu",
   1: "c",
-  2: "r",
+  2: "crt",
   3: "c",
   4: "c",
   5: "c",
-  6: "ru",
-  7: "c"
+  6: "rtu",
+  7: "abcdfilmnortu"
 };
 
 var indexSectionNames =

@@ -1,0 +1,12 @@
+/* Hide the right-side page navigation panel introduced in Doxygen 1.9.x+.
+   The panel (#page-nav) shows page sections (Macro/Function Documentation)
+   as a secondary tree. This matches the rendering of older Doxygen (1.8.x). */
+#page-nav {
+    display: none !important;
+}
+#page-nav-resize-handle {
+    display: none !important;
+}
+#container {
+    grid-template-columns: auto !important;
+}

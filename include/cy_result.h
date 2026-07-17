@@ -8,7 +8,7 @@
  *
  ***************************************************************************************************
  * \copyright
- * (c) 2018-2025, Infineon Technologies AG, or an affiliate of Infineon
+ * (c) 2019-2026, Infineon Technologies AG, or an affiliate of Infineon
  * Technologies AG. All rights reserved.
  * This software, associated documentation and materials ("Software") is
  * owned by Infineon Technologies AG or one of its affiliates ("Infineon")
@@ -53,7 +53,6 @@
 
 /**
  * \addtogroup group_result Result Type
- * \ingroup group_abstraction
  * \{
  * \anchor anchor_general_description
  * \brief Defines a type and related utilities for function result handling.
@@ -532,7 +531,11 @@ typedef union
     {
         uint16_t code : CY_RSLT_CODE_WIDTH;                 //!< The 16bit result code
         cy_en_rslt_type_t type : CY_RSLT_TYPE_WIDTH;        //!< The  2bit result type
+        #ifndef DOXYGEN
         cy_en_rslt_module_t module : CY_RSLT_MODULE_WIDTH;  //!< The 14bit module id
+        #else
+        cy_en_rslt_module_t rslt_module;                    //!< The 14bit module id
+        #endif
     };
 } cy_rslt_decode_t;
 
